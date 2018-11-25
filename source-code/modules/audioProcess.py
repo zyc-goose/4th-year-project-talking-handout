@@ -3,7 +3,6 @@ from google.cloud.speech import enums
 from google.cloud.speech import types
 import time
 from . import printMessage
-import json
 
 
 # gcs: Google Cloud Service. 

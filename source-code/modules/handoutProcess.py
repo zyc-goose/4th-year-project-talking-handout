@@ -3,7 +3,6 @@ import pdf2image
 from . import printMessage
 import os
 import re
-import json
 from PIL import Image
 from collections import namedtuple
 

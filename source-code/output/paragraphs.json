@@ -1,0 +1,442 @@
+[
+    {
+        "pageNum": 1,
+        "blockNum": 1,
+        "parNum": 1,
+        "left": 494,
+        "top": 221,
+        "width": 565,
+        "height": 106,
+        "text": "Part IA Mathematics Easter Term 2010"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 2,
+        "parNum": 1,
+        "left": 297,
+        "top": 391,
+        "width": 956,
+        "height": 42,
+        "text": "Handout 1 Functions of Several Variables"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 3,
+        "parNum": 1,
+        "left": 220,
+        "top": 489,
+        "width": 1109,
+        "height": 134,
+        "text": "These lectures consider how calculus extends to functions of two or more variables. The main topics are: differentiation, stationary points and extrema, and Taylor series."
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 4,
+        "parNum": 1,
+        "left": 221,
+        "top": 684,
+        "width": 1092,
+        "height": 36,
+        "text": "of two variables: Graphical Representations"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 219,
+        "top": 752,
+        "width": 585,
+        "height": 28,
+        "text": "Consider a function of two variables:"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 6,
+        "parNum": 1,
+        "left": 1028,
+        "top": 777,
+        "width": 293,
+        "height": 66,
+        "text": "ane the"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 7,
+        "parNum": 1,
+        "left": 217,
+        "top": 815,
+        "width": 1114,
+        "height": 199,
+        "text": "\\ra bles We can picture such a function as a surface in 3\u2014dimensions. To draw it, construct some lines in the surface. E.g. Fix and"
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 8,
+        "parNum": 1,
+        "left": 216,
+        "top": 1027,
+        "width": 628,
+        "height": 36,
+        "text": "vary y. And then the other way round."
+    },
+    {
+        "pageNum": 1,
+        "blockNum": 10,
+        "parNum": 1,
+        "left": 209,
+        "top": 1815,
+        "width": 1098,
+        "height": 37,
+        "text": "Another way of representing such a function is with a contour map:"
+    },
+    {
+        "pageNum": 2,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 205,
+        "top": 666,
+        "width": 1109,
+        "height": 81,
+        "text": "A third way is to plot families of curves with z against one variable and the other one fixed:"
+    },
+    {
+        "pageNum": 2,
+        "blockNum": 7,
+        "parNum": 1,
+        "left": 1267,
+        "top": 1013,
+        "width": 155,
+        "height": 39,
+        "text": "v C"
+    },
+    {
+        "pageNum": 2,
+        "blockNum": 9,
+        "parNum": 1,
+        "left": 189,
+        "top": 1195,
+        "width": 1121,
+        "height": 309,
+        "text": "For functions of 3 variables Wz it is possible to use a sequence of pictures of one of the above types. It is more difficult for larger numbers of variables but we can still use the mathematics. 3D graphics can be displayed on the DPO computers using matlab. Type matlab and then the following sample commands:"
+    },
+    {
+        "pageNum": 2,
+        "blockNum": 9,
+        "parNum": 2,
+        "left": 145,
+        "top": 1467,
+        "width": 238,
+        "height": 70,
+        "text": "help peaks"
+    },
+    {
+        "pageNum": 2,
+        "blockNum": 10,
+        "parNum": 1,
+        "left": 200,
+        "top": 1583,
+        "width": 631,
+        "height": 27,
+        "text": "sample function of two variables."
+    },
+    {
+        "pageNum": 3,
+        "blockNum": 4,
+        "parNum": 1,
+        "left": 213,
+        "top": 621,
+        "width": 1163,
+        "height": 190,
+        "text": "It is sometimes useful to represent a surface parametrically: C"
+    },
+    {
+        "pageNum": 3,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 205,
+        "top": 897,
+        "width": 1115,
+        "height": 131,
+        "text": "where u, v are real parameters and i, j, k are the unit coordinate vectors. Setting constant and varying v (and vice versa) again gives a set of curves in the surface."
+    },
+    {
+        "pageNum": 3,
+        "blockNum": 6,
+        "parNum": 1,
+        "left": 204,
+        "top": 1057,
+        "width": 1098,
+        "height": 315,
+        "text": "Example 1. r(u,v) uj vk."
+    },
+    {
+        "pageNum": 3,
+        "blockNum": 7,
+        "parNum": 1,
+        "left": 1021,
+        "top": 1381,
+        "width": 321,
+        "height": 150,
+        "text": "4 a"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 1,
+        "parNum": 1,
+        "left": 218,
+        "top": 146,
+        "width": 1105,
+        "height": 125,
+        "text": "DERIVATIVES 4 Partial Derivatives"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 2,
+        "parNum": 1,
+        "left": 216,
+        "top": 341,
+        "width": 939,
+        "height": 120,
+        "text": "Consider a function of a single variable: y We say: i4"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 4,
+        "parNum": 1,
+        "left": 203,
+        "top": 482,
+        "width": 1288,
+        "height": 479,
+        "text": "exists 1 If it exists, the limit is denoted by: 6 C a t o me L"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 202,
+        "top": 984,
+        "width": 789,
+        "height": 44,
+        "text": "Consider a function of two variables:"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 6,
+        "parNum": 1,
+        "left": 230,
+        "top": 1088,
+        "width": 1161,
+        "height": 215,
+        "text": "is A of e t te"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 10,
+        "parNum": 1,
+        "left": 190,
+        "top": 1512,
+        "width": 1120,
+        "height": 71,
+        "text": "The w1th respect to y is defined similarly. Sometimes"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 11,
+        "parNum": 1,
+        "left": 188,
+        "top": 1590,
+        "width": 583,
+        "height": 118,
+        "text": "the notation"
+    },
+    {
+        "pageNum": 4,
+        "blockNum": 12,
+        "parNum": 1,
+        "left": 183,
+        "top": 1730,
+        "width": 1126,
+        "height": 180,
+        "text": "is used to emphasise that the partlal derivative is with respect to keeping y fixed. Be careful of some books (e.g. Kreysig) which use to denote partial derivative with respect to x evaluated at zi and y"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 1,
+        "parNum": 1,
+        "left": 229,
+        "top": 126,
+        "width": 1246,
+        "height": 46,
+        "text": "2 PARTIAL DERIVATIVES C 5"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 3,
+        "parNum": 1,
+        "left": 226,
+        "top": 686,
+        "width": 1184,
+        "height": 40,
+        "text": "The idea of partial derivative extends to any number of variables."
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 4,
+        "parNum": 1,
+        "left": 227,
+        "top": 786,
+        "width": 789,
+        "height": 94,
+        "text": "Higher Order Partial Derivatives"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 226,
+        "top": 866,
+        "width": 1249,
+        "height": 65,
+        "text": "For the functions and again functions of the"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 6,
+        "parNum": 1,
+        "left": 224,
+        "top": 932,
+        "width": 1198,
+        "height": 74,
+        "text": "two variables and y. h We"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 14,
+        "parNum": 1,
+        "left": 223,
+        "top": 1336,
+        "width": 1224,
+        "height": 193,
+        "text": "ay Example 2. z= 2."
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 14,
+        "parNum": 2,
+        "left": 397,
+        "top": 1507,
+        "width": 1160,
+        "height": 348,
+        "text": "2x 3x on 0"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 16,
+        "parNum": 1,
+        "left": 382,
+        "top": 1932,
+        "width": 1181,
+        "height": 194,
+        "text": "2 css cas"
+    },
+    {
+        "pageNum": 5,
+        "blockNum": 17,
+        "parNum": 1,
+        "left": 683,
+        "top": 2196,
+        "width": 524,
+        "height": 101,
+        "text": "Note equa"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 1,
+        "parNum": 1,
+        "left": 233,
+        "top": 133,
+        "width": 1247,
+        "height": 28,
+        "text": "2 PARTIAL DERIVATIVES 6"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 2,
+        "parNum": 1,
+        "left": 493,
+        "top": 231,
+        "width": 285,
+        "height": 100,
+        "text": "2f and"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 3,
+        "parNum": 1,
+        "left": 230,
+        "top": 341,
+        "width": 1361,
+        "height": 242,
+        "text": "w have Note: the rate of change in the of the slope in the y\u2014direction."
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 4,
+        "parNum": 1,
+        "left": 234,
+        "top": 561,
+        "width": 1178,
+        "height": 97,
+        "text": "It to oc"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 5,
+        "parNum": 1,
+        "left": 232,
+        "top": 262,
+        "width": 1117,
+        "height": 42,
+        "text": "Theorem. If are continuous, they are equal."
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 10,
+        "parNum": 1,
+        "left": 230,
+        "top": 658,
+        "width": 482,
+        "height": 126,
+        "text": "in Chain Rule"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 14,
+        "parNum": 1,
+        "left": 228,
+        "top": 1224,
+        "width": 1249,
+        "height": 219,
+        "text": "Consider z= To first order accuracy: (1) Consider also a perturbation in y:"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 16,
+        "parNum": 1,
+        "left": 225,
+        "top": 1737,
+        "width": 1139,
+        "height": 70,
+        "text": "to first order accuracy we have"
+    },
+    {
+        "pageNum": 6,
+        "blockNum": 19,
+        "parNum": 1,
+        "left": 464,
+        "top": 2144,
+        "width": 1129,
+        "height": 131,
+        "text": "3t 22( [3"
+    }
+]

@@ -1,0 +1,374 @@
+[
+    {
+        "parID": 0,
+        "parText": "Part IA Mathematics Easter Term 2010",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 1,
+        "parText": "Handout 1 Functions of Several Variables",
+        "matchedAudioSegments": [
+            {
+                "segID": 0,
+                "segTimeStamp": "00:00.000",
+                "segText": "thank you and there's an a handout which I hope you can all see for the next time for lectures here so let me just start with this Sam transparency here which is just a print out from the syllabus on our webpage so we're on to know the last 7 letters of the maths course and it's 2 topics we going to come cover functions of several variables here that will last for for lectures and then we have introduction to Laplace transforms to three lectures and as a separate handout coming for the Laplace transforms part the references here and there are three books that are relevant and James modern engineering mathematics that covers the basics of both these topics"
+            }
+        ],
+        "matchedWords": "functions of several variables"
+    },
+    {
+        "parID": 2,
+        "parText": "These lectures consider how calculus extends to functions of two or more variables. The main topics are: differentiation, stationary points and extrema, and Taylor series.",
+        "matchedAudioSegments": [
+            {
+                "segID": 2,
+                "segTimeStamp": "01:59.800",
+                "segText": "let's make a start then with a first-hand out so we talking about functions of several variables we're going to do calculus differentiation of such functions and and end up with looking Taylor series so a little bit of this you've had already in the Michaelmas term with partial derivatives will cover a little bit of that and quickly and then go on to the new material the first couple of pages are just a few comments on graphical representations and just eat to get everything going so let's start with the function of two variables so Z = f of X and Y"
+            }
+        ],
+        "matchedWords": "taylor series"
+    },
+    {
+        "parID": 3,
+        "parText": "of two variables: Graphical Representations",
+        "matchedAudioSegments": [
+            {
+                "segID": 5,
+                "segTimeStamp": "03:08.600",
+                "segText": " those can be freely adjusted and Z is the dependent variable that determine its value is determined by the function f so in terms of graphical representations we can represent such a function as a surface in three dimensions this is very familiar so to draw it we can construct some lines in the surface so here's my three axis X and Y are independent variables and Z is the dependent variable and"
+            }
+        ],
+        "matchedWords": "graphical representations"
+    },
+    {
+        "parID": 4,
+        "parText": "Consider a function of two variables:",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 5,
+        "parText": "ane the",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 6,
+        "parText": "\\ra bles We can picture such a function as a surface in 3\u2014dimensions. To draw it, construct some lines in the surface. E.g. Fix and",
+        "matchedAudioSegments": [
+            {
+                "segID": 22,
+                "segTimeStamp": "08:39.200",
+                "segText": " so let's just say then e.g. are equipotentials"
+            }
+        ],
+        "matchedWords": "e g"
+    },
+    {
+        "parID": 7,
+        "parText": "vary y. And then the other way round.",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 8,
+        "parText": "Another way of representing such a function is with a contour map:",
+        "matchedAudioSegments": [
+            {
+                "segID": 38,
+                "segTimeStamp": "12:42.800",
+                "segText": " so we've got pressure as a function of X and Y but also It's Time varying so that brings in the third variable T so what we've done here to fix time is a contour map so these are isolines isobars isolines a pressure and we just have a sequence this is the same picture 20 days later so that's a function there are three variables with a graphical representation"
+            }
+        ],
+        "matchedWords": "a contour map"
+    },
+    {
+        "parID": 9,
+        "parText": "A third way is to plot families of curves with z against one variable and the other one fixed:",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 10,
+        "parText": "v C",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 11,
+        "parText": "For functions of 3 variables Wz it is possible to use a sequence of pictures of one of the above types. It is more difficult for larger numbers of variables but we can still use the mathematics. 3D graphics can be displayed on the DPO computers using matlab. Type matlab and then the following sample commands:",
+        "matchedAudioSegments": [
+            {
+                "segID": 39,
+                "segTimeStamp": "13:14.800",
+                "segText": " of course it gets the more independent variables you have the more difficult it becomes to package information graphically there is more information there and we can still use the mathematics though the differentiation partial differentiation expanding and series The Taylor series maxima and minima all of the things will learn about in the two-dimensional case will go over into high dementia not going to cover that in this course but it does generalise"
+            }
+        ],
+        "matchedWords": "we can still use the mathematics"
+    },
+    {
+        "parID": 12,
+        "parText": "help peaks",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 13,
+        "parText": "sample function of two variables.",
+        "matchedAudioSegments": [
+            {
+                "segID": 41,
+                "segTimeStamp": "13:55.300",
+                "segText": " there are many programs to do a graphical representations let me just mention one that's used a lot in the Triforce for many different applications MATLAB with MATLAB you can use you can draw and graphical representations of functions of two variables in the various forms that we have described so the double arrow here that's the MATLAB prompt and so you can"
+            }
+        ],
+        "matchedWords": "of two variables"
+    },
+    {
+        "parID": 14,
+        "parText": "It is sometimes useful to represent a surface parametrically: C",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 15,
+        "parText": "where u, v are real parameters and i, j, k are the unit coordinate vectors. Setting constant and varying v (and vice versa) again gives a set of curves in the surface.",
+        "matchedAudioSegments": [
+            {
+                "segID": 63,
+                "segTimeStamp": "19:52.600",
+                "segText": " sketch or visualiser surface describe in this way by setting alternately you to be constants various constant values and then very v and vice-versa"
+            }
+        ],
+        "matchedWords": "v and vice versa"
+    },
+    {
+        "parID": 16,
+        "parText": "Example 1. r(u,v) uj vk.",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 17,
+        "parText": "4 a",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 18,
+        "parText": "DERIVATIVES 4 Partial Derivatives",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 19,
+        "parText": "Consider a function of a single variable: y We say: i4",
+        "matchedAudioSegments": [
+            {
+                "segID": 81,
+                "segTimeStamp": "23:59.500",
+                "segText": " ok so let's start now on the path of differentiation the first bit of this again we'll be a week out from the Michaelmas term so let's go right back to a single variable case why it was FFX so we say that f"
+            }
+        ],
+        "matchedWords": "we say"
+    },
+    {
+        "parID": 20,
+        "parText": "exists 1 If it exists, the limit is denoted by: 6 C a t o me L",
+        "matchedAudioSegments": [
+            {
+                "segID": 105,
+                "segTimeStamp": "27:20.100",
+                "segText": " so I'm part of ordinary calculus is that the limit has the same value as dealt dealt x 10 stazio from either Direction"
+            }
+        ],
+        "matchedWords": "the limit"
+    },
+    {
+        "parID": 21,
+        "parText": "Consider a function of two variables:",
+        "matchedAudioSegments": [
+            {
+                "segID": 107,
+                "segTimeStamp": "27:45.400",
+                "segText": " so a function of two variables so"
+            }
+        ],
+        "matchedWords": "a function of two variables"
+    },
+    {
+        "parID": 22,
+        "parText": "is A of e t te",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 23,
+        "parText": "The w1th respect to y is defined similarly. Sometimes",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 24,
+        "parText": "the notation",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 25,
+        "parText": "is used to emphasise that the partlal derivative is with respect to keeping y fixed. Be careful of some books (e.g. Kreysig) which use to denote partial derivative with respect to x evaluated at zi and y",
+        "matchedAudioSegments": [
+            {
+                "segID": 115,
+                "segTimeStamp": "28:51.200",
+                "segText": " with respect to x"
+            }
+        ],
+        "matchedWords": "partial derivative with respect to x"
+    },
+    {
+        "parID": 26,
+        "parText": "2 PARTIAL DERIVATIVES C 5",
+        "matchedAudioSegments": [
+            {
+                "segID": 138,
+                "segTimeStamp": "32:49.500",
+                "segText": " so I'm just looking at this graphic those partial derivatives graphically and let's take this picture here"
+            }
+        ],
+        "matchedWords": "partial derivatives"
+    },
+    {
+        "parID": 27,
+        "parText": "The idea of partial derivative extends to any number of variables.",
+        "matchedAudioSegments": [
+            {
+                "segID": 156,
+                "segTimeStamp": "35:26.900",
+                "segText": " so clearly we can extend this idea to any number of independent variables"
+            }
+        ],
+        "matchedWords": "to any number of"
+    },
+    {
+        "parID": 28,
+        "parText": "Higher Order Partial Derivatives",
+        "matchedAudioSegments": [
+            {
+                "segID": 203,
+                "segTimeStamp": "40:25.100",
+                "segText": " let's look at the mixed partial derivatives so differentiating this top 1 with respect to y now so that gives us deep to Z by DY DX is 6 x Cause 3 y and differentiating this top 1 with respect to x we get d2z pie"
+            }
+        ],
+        "matchedWords": "partial derivatives"
+    },
+    {
+        "parID": 29,
+        "parText": "For the functions and again functions of the",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 30,
+        "parText": "two variables and y. h We",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 31,
+        "parText": "ay Example 2. z= 2.",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 32,
+        "parText": "2x 3x on 0",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 33,
+        "parText": "2 css cas",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 34,
+        "parText": "Note equa",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 35,
+        "parText": "2 PARTIAL DERIVATIVES 6",
+        "matchedAudioSegments": [
+            {
+                "segID": 211,
+                "segTimeStamp": "41:33.400",
+                "segText": " on the 2nd of those mixed partial derivatives and independent of the Order of taking the derivative"
+            }
+        ],
+        "matchedWords": "partial derivatives"
+    },
+    {
+        "parID": 36,
+        "parText": "2f and",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 37,
+        "parText": "w have Note: the rate of change in the of the slope in the y\u2014direction.",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 38,
+        "parText": "It to oc",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 39,
+        "parText": "Theorem. If are continuous, they are equal.",
+        "matchedAudioSegments": [
+            {
+                "segID": 214,
+                "segTimeStamp": "42:47.300",
+                "segText": " and that those are continuous so"
+            }
+        ],
+        "matchedWords": "are continuous"
+    },
+    {
+        "parID": 40,
+        "parText": "in Chain Rule",
+        "matchedAudioSegments": [
+            {
+                "segID": 225,
+                "segTimeStamp": "45:00.000",
+                "segText": " so I'd like to move on now to the chain rule now the chain rule you will have seen in some forms already the chain room is about a function of a function and differentiating a function of a function but now we want to look at how that's going to work when you have several variables involved"
+            }
+        ],
+        "matchedWords": "chain rule"
+    },
+    {
+        "parID": 41,
+        "parText": "Consider z= To first order accuracy: (1) Consider also a perturbation in y:",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 42,
+        "parText": "to first order accuracy we have",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    },
+    {
+        "parID": 43,
+        "parText": "3t 22( [3",
+        "matchedAudioSegments": [],
+        "matchedWords": ""
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "handoutProcess": {
+        "skip": true,
+        "abspath": "/Users/zyc/Desktop/mcs_lectures/handouts/smith-0426.pdf",
+        "reject_thres": 75
+    },
+    "audioProcess": {
+        "skip": true,
+        "gcs_uri": "gs://iiaproj-resources/smith-0426.flac"
+    }
+}

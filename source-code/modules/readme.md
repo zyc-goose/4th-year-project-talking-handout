@@ -1,10 +1,10 @@
 # modules
 
 - [modules](#modules)
-    - [alignment.py](#alignment.py)
-    - [audioProcess.py](#audioProcess.py)
-    - [handoutProcess.py](#handoutProcess.py)
-    - [printMessage.py](#printMessage.py)
+    - [alignment.py](#alignmentpy)
+    - [audioProcess.py](#audioProcesspy)
+    - [handoutProcess.py](#handoutProcesspy)
+    - [printMessage.py](#printMessagepy)
 
 ---
 

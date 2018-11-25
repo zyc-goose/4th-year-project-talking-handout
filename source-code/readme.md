@@ -27,6 +27,7 @@ Folder which contains core Python modules in the current system. These modules a
 
 For more information, see [here](./modules).
 
+---
 ### output
 
 Folder which stores results produced by the system. Currently they are all in JSON format.
@@ -37,6 +38,7 @@ Folder which stores results produced by the system. Currently they are all in JS
 
 For more information, see [here](./output).
 
+---
 ### config.json
 
 The main configuration file which specifies the core parameters of the system, for example the absolute path for the handout input.
@@ -49,6 +51,7 @@ The main configuration file which specifies the core parameters of the system, f
     * **"skip"**: [boolean] if true, skip the audio process stage
     * **"gcs_uri"**: [string] the Google Cloud URI of the input audio file, which should be already uploaded to Google Cloud Storage. 
 
+---
 ### main.py
 
 The main Python script which performs all procedures involved in the current system, including handout processing, audio processing and handout-to-audio alignment. Type `python main.py` to run the script. The results will be stored in the `output` folder.

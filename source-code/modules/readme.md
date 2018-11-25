@@ -8,7 +8,7 @@
 * re - regular expression
 * printMessage.py
 
-Methods
+### Methods
 
 #### align(pars, trans)
 

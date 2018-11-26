@@ -1,4 +1,4 @@
-# CUED Part IIB Project - Talking Handout
+# CUED Part IIB Project - Talking Handouts
 
 ## Directory Tree
 
@@ -8,7 +8,7 @@
 
 ## Introduction
 
-This is the main project folder for the CUED Part IIB fourth year project - **Talking Handout**. 
+This is the main project folder for the CUED Part IIB fourth year project - **Talking Handouts**. 
 
 This project is supervised by Prof. Phil Woodland and Dr. Chao Zhang.
 

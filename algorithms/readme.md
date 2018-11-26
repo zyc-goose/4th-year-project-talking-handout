@@ -1,0 +1,3 @@
+# Algorithms
+
+* [Alignment Algorithm](./alignment)

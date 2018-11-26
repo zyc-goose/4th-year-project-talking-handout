@@ -1,5 +1,11 @@
 # CUED Part IIB Project - Talking Handout
 
+## Directory Tree
+
+* [algorithms](./algorithms)
+* [source-code](./source-code)
+* [tools-doc](./tools-doc)
+
 ## Introduction
 
 This is the main project folder for the CUED Part IIB fourth year project - **Talking Handout**. 

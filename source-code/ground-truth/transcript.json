@@ -1,0 +1,197 @@
+[
+    {
+        "timestamp": "00:00.000",
+        "text": "thank you there's an a handout which I hope you can all see for the next four lectures here so let me just start with this transparency here which is just a print out from the syllabus on our webpage so we're on to know the last 7 lectures of the maths course and it's 2 topics we going to cover functions of several variables here that will last for four lectures and then we have introduction to Laplace transforms for three lectures and as a separate handout coming for the Laplace transforms part the references",
+        "confidence": 1
+    },
+    {
+        "timestamp": "00:47.000",
+        "text": "here or there are three books that are relevant James modern engineering mathematics that covers the basics of both these topics and the advanced modern James also covers both topics but leading on especially in this first four lectures leading on to workbooks coming next year of the math course in the Michaelmas term on vector calculus Kreyszig's book again it's comparable to the James's second reference it gives a thorough and in-depth treatment of both these topics and it leads well onto second-year material my intention is to provide you notes on both these topics which will be",
+        "confidence": 1
+    },
+    {
+        "timestamp": "01:41.000",
+        "text": "a sufficient treatment for the purposes of the first-year and for the examination so these you don't need to buy them unless you wish and they're useful as references so let's make a start then with the first handout so we're talking about functions of several variables we're going to do calculus differentiation of such functions and end up with looking Taylor series so a little bit of this you've had already in the Michaelmas term with partial derivatives will cover a little bit of that quickly and then go on to the new material",
+        "confidence": 1
+    },
+    {
+        "timestamp": "02:28.000",
+        "text": "the first couple of pages are just a few comments on graphical representations and just to get everything going so let's start with the function of two variables so Z = f of X and Y and X and Y are the independent variables those can be freely adjusted and Z is the dependent variable that's determined its value is determined by the function f so in terms of graphical representations we can represent such a function as a surface in three dimensions this is very familiar so to draw it we can construct some lines in the surface",
+        "confidence": 1
+    },
+    {
+        "timestamp": "03:35.000",
+        "text": "so here's my three axes X and Y independent variables and Z is the dependent variable and these lines here Y1 Y2 and these are lines of X constant X1 and X2 and we draw lines in the surface lying above these lines of constant x and constant y and so we get something like this does the lines above constant X and and these are the ones over constant Y and so you build up a mesh for the surface in this way and as I say this is very familiar we see this all the time here are",
+        "confidence": 1
+    },
+    {
+        "timestamp": "04:45.000",
+        "text": "a couple of examples from thermodynamics here so we have pressure as a function of specific volume and temperature sorry this is just an example it's not part of the handout I'm just giving you some examples of that picture so it's a function of two variables independent variable specific volume and temperature and here we have the 3D plot is a similar one from soil mechanics unfrozen water content temperature as the independent variables osmotic pressure osmotic potential as the Z variable the dependent variable here's one from aerodynamics this is an aerofoil and we're looking at",
+        "confidence": 1
+    },
+    {
+        "timestamp": "05:44.000",
+        "text": "pressure against two variables here chord wise position and the angle of attack and so this is a three dimensional plot we have chord wise position here and we have angle of attack in the other axis so as I say that's all very familiar to you it's not by any means the only way to graphically represent functions of several variables so another way is with a contour map so here we just draw x y and x-axis and we draw contours so something like this and let's say this would be said his Z1 Z = Z2 so those lines",
+        "confidence": 1
+    },
+    {
+        "timestamp": "07:14.000",
+        "text": "represent constant values of the dependent variable Z so once again this is very familiar here's one example from electrostatic so we have two parallel conductors and we looking at the potential field voltage as a function of X and Y the independent variables and we're looking at the equipotentials equi means equal potential so the voltage is a constant on those lines so that's a contour map of potential here's an example from aerodynamics an aerofoil again and we looking at Mach number M as a function of X and Y Mach number is ratio of the velocity of the flow",
+        "confidence": 1
+    },
+    {
+        "timestamp": "08:15.000",
+        "text": "to the velocity of Sound And so in the magnified picture here you see this blue line is m = 1 which is actually called the sonic line so this is where the flow has Mach one and then we have the supersonic region here and greater than 1 of a subsonic less than 1 so let's just say then e.g. equipotentials or isolines iso meaning equal isolines of pressure or Mach number and many other examples so there are still other ways to represent functions graphically so we can plot a family of curves Z the dependent variable against",
+        "confidence": 1
+    },
+    {
+        "timestamp": "09:34.000",
+        "text": "one of the Independent variables with the other fixed and so then we get set of curves like this for example and this would be with Y = Y1 Y = Y2 and so on and again this is very frequently used so here's an electrical example a field-effect transistor so we've got the drain current as a function of drain source voltage and gate source voltage so we have a family of terms we have a family of curves here we're plotting the dependent variable against one of the Independent variables and the curves are",
+        "confidence": 1
+    },
+    {
+        "timestamp": "10:41.000",
+        "text": "parameterized in the other independent variable thermal again this is done a lot temperature versus here we have entropy and specific volume so temperature is plotted against entropy and then the curves are parameterized here in the specific volume and that's another one again from thermal fixing parameterizing the curves in one of the Independent variables here pressure so e.g. so we had the field effect transistor and we had a couple of examples there from thermal ok so that's a few ways to represent functions of two variables we go to the three variable case so w",
+        "confidence": 1
+    },
+    {
+        "timestamp": "12:00.000",
+        "text": "is a function of x y and z well things become more difficult with graphical representations the very first one we had we don't have enough dimensions to draw that but with the second and third possibilities we could use a sequence of such pictures in fact you know the first type you can also use the sequence there so here's an example of this is an old style weather map so we've got pressure as a function of X and Y but also It's Time varying so that brings in the third variable T so what we've done",
+        "confidence": 1
+    },
+    {
+        "timestamp": "12:55.000",
+        "text": "here to fix time is a contour map so these are isolines isobars isolines of pressure and we just have a sequence this is the same picture 3 days later so that's a function there of three variables with a graphical representation of course it gets the more independent variables you have the more difficult it becomes to package information graphically there is more information there and we can still use the mathematics though the differentiation partial differentiation expanding in series The Taylor series maxima and minima all of the things will learn about in the two-dimensional case will go over",
+        "confidence": 1
+    },
+    {
+        "timestamp": "13:47.000",
+        "text": "into high dimention we're not going to cover that in this course but it does generalise there are many programs to do graphical representations let me just mention one that's used a lot in the Tripos for many different applications MATLAB with MATLAB you can use you can draw graphical representations of functions of two variables in the various forms that we have described so the double arrow here that's the MATLAB prompt and so you can launch MATLAB from the machines in the DPO and this is just this function peaks is just a demo to illustrate graphing",
+        "confidence": 1
+    },
+    {
+        "timestamp": "14:55.000",
+        "text": "typing help peaks will describe how to use that we type this command Z is peaks of 25 is specifying how fine the mesh is for the function and the command mesh of Z it gives us a plot very much of the type we showed on the first page in fact this is the output with this command surf surf actually fills in the mesh with colours and tries to give a better visual impression of the peaks and troughs and so on so that's the second command surf contour you can also do that so the",
+        "confidence": 1
+    },
+    {
+        "timestamp": "16:00.000",
+        "text": "bottom command contour produces that contour map and fairly also you can do other this type of diagram as well in a straightforward way the top of the next page let me just gives you an example of how to plot your own function in MATLAB so this example is Z = XY 1 - x 2 - y and it's these two lines of code which produced that the first 1 sets up the mesh of x values and Y values defined on a on a rectangular grid in 0 and 1 for x and 0 and 2 for y",
+        "confidence": 1
+    },
+    {
+        "timestamp": "17:30.000",
+        "text": "the second line defines function z Now MATLAB is basically built on matrix multiplication but for functions of this type you need to do element by element multiplication to define the function and that's a dot-star the regular star is just times as a matrix multiplication so that's how you define function Z here and then once you've got the Z values that's the result of the command surf here this one's of the size of x you have to produce a set of one's over the entire grid to match this one here and then",
+        "confidence": 1
+    },
+    {
+        "timestamp": "18:24.000",
+        "text": "the two there as well ok so one more small section here of the preliminary type on parametric representations so quite often we running to descriptions of surfaces of the following type so R is the position vector and it's going to be a function of two parameters u and v and so writing out what that means more fully we have the X coordinate x with u v and then I the first unicorn vector and then + y of U and V J + Z of U and V times k so the X Y and Z coordinates vary as",
+        "confidence": 1
+    },
+    {
+        "timestamp": "19:37.000",
+        "text": "a function of two independent parameters here U and V so these U and V are allowed to vary freely so we can sketch or visualise a surface described in this way by setting alternately U to be constants various constant values and then vary v and vice-versa and following a procedure give us a mesh to describe a surface again in three dimensions so here we are defining the three parameters x y and z are equally in terms of u and v so let's take a an example here so R U V is given by this expression with the cosines and sines",
+        "confidence": 1
+    },
+    {
+        "timestamp": "20:43.000",
+        "text": "of U and then the V term the V parameter multiplies the K so let's take a sketch of that surface first of all let's take U to be a constant let's select 0 then we have 4 i + 0 + v times k so if I mark here let's say that's 2 and 4 then when U is 0 and V varies we have 4 I + any multiples of k so we going to have a straight line here vertically through the point 4 I now so that's the line U equals 0 let's now take V to be",
+        "confidence": 1
+    },
+    {
+        "timestamp": "21:56.000",
+        "text": "constant let's set V to be 0 and vary U then we have the cosine U term and the sine U term they're both multiplied by 2 so I think you can see this is going to be a circle in the XY plane and the circle is going to be centred at 2 so let me draw then circle like this and you work out which direction that goes it follows this arrow here as U increases and this is the V is 0 curve and then for different values of V we can again see that we get circles like this and as the picture",
+        "confidence": 1
+    },
+    {
+        "timestamp": "23:09.000",
+        "text": "develops then we can see that we're what we have here is a parametric representation of a cylinder ok ok so let's start now on the partial differentiation the first bit of this again we'll be a recap from the Michaelmas term so let's go right back to a single variable case Y equals F of X so we say that F is differentiable at X equal to X1 1 if the limit as delta X tends to 0 of f of x1 + delta x - f of x 1 divided by Delta x if that limit exists so that's the ordinary way",
+        "confidence": 1
+    },
+    {
+        "timestamp": "25:25.000",
+        "text": "of defining derivative in in calculus and of course we have the two common notations the F prime of X1 or DF by DX of X1 and just to note that of course functions can fail to have derivatives at some points and so if we have something like this discontinuity so at depending on what the value is at this point of discontinuity that this limit doesn't or it has from One Direction it will not exist it will blow up and even if you have something like this the slope at this point is discontinuous and technically speaking the derivative",
+        "confidence": 1
+    },
+    {
+        "timestamp": "27:11.000",
+        "text": "at that point doesn't exist because as dealt x tends to zero from the left and from the right you get different values so part of ordinary calculus is that the limit has the same value as delta x tends to 0 from either Direction ok so that's the really basic case from ordinary calculus so a function of two variables so so if we fix y equal y1 so I've got Z = f of X and Y I'm gonna fix one of the independent variables and if f of x y1 is differentiable as a function of x",
+        "confidence": 1
+    },
+    {
+        "timestamp": "28:35.000",
+        "text": "then we get the partial derivative with respect to x so am I going to leave a little space here to the left but I'm going to add something in a second so the notation is this delta symbol the partial delta to a partial DF by DX and this is the limit as delta X tends to 0 of f of X1 plus delta X comma y1 - f of x1 y1 divided by delta x so that's how we define the partial derivative on this side let me just write it again here partial DF by DX",
+        "confidence": 1
+    },
+    {
+        "timestamp": "30:26.000",
+        "text": "brackets X1 y1 and that's I just brought that in to emphasize where it is evaluated sometimes we put this in other times it looks too cluttered to carry this around we're just you work with partial DF by DX depending on the situation partial derivative with respect to Y is defined similarly another piece of notation partial DF by DX and then in a large round bracket and a subscript why here so sometimes we use that notation for the partial derivative with respect to X keeping Y fixed so there's little Y here outside emphasizes the variable that kept fixed and",
+        "confidence": 1
+    },
+    {
+        "timestamp": "31:49.000",
+        "text": "again in some circumstances it's useful to to be really clear about that a little word of warning here on notation some of the books and Kreyszig for example use this notation and partial DF by DX vertical line and then a subscript of X1 y1 to use to denote where the derivative is evaluated so that equivalent to what I've written here and I'm not going to use that notation whenever we have the subscript outside that's telling us what's going to be kept fixed ok so just looking at this graphic those partial derivatives graphically let's take",
+        "confidence": 1
+    },
+    {
+        "timestamp": "33:08.000",
+        "text": "this picture here X1 y1 is this point here I'm going to take two lines in the surface lying above the X is constant and Y is constant lines and let me draw in the tangents at this point and so this tangent the slope of this is partial DF by DX at X1 Y1 so we're keeping Y fixed and taking the derivative partial derivative with respect to x and we end up with this slope and the other one of course the slope is partial DF by DY of X1 Y1 so that's the graphical meaning of those partial derivatives ok",
+        "confidence": 1
+    },
+    {
+        "timestamp": "35:28.000",
+        "text": "so clearly we can extend this idea to any number of independent variables but also we have the possibility of Higher order derivatives taking a derivative a second time so let's take our two variable cases Z is a function of X and Y the functions partial DF by DX partial DF by DY those are again functions of two variables that both functions of X and Y so as we move this point around both slopes are going to vary so we can look at how those change by taking a derivative so if we differentiate we differentiate",
+        "confidence": 1
+    },
+    {
+        "timestamp": "36:30.000",
+        "text": "again we have four possibilities we have we can take D by DX partial D by DX of partial DF by DX we can take partial d by DX of partial df by dy we can take partial d by dy of partial df by dx and then finally we can take partial d by dy of partial Df by dy so those are the four derivatives different derivatives we could take and the notation for these this one is partial d2f by DX squared the next one partial d2f so we keep the order in the",
+        "confidence": 1
+    },
+    {
+        "timestamp": "38:19.000",
+        "text": "denominator matching the order on the previous line so that special d2f by DX DY this one is d2f by DY DX and finally d2f by partial d2f by DY squared ok so let's take an example so we got Z equals X squared sine 3y so we have partial DZ by DX this = 2x sine 3y partial DZ by DY that's 3 x squared cosine 3y partial d2Z by dx squared that's 2 sine 3y and d2z by dy squared that's -9 x squared sine 3y let's look at the",
+        "confidence": 1
+    },
+    {
+        "timestamp": "40:25.000",
+        "text": "mixed partial derivatives so differentiating this top 1 with respect to y now so that gives us d2Z by DY DX is 6 x cosine 3 y and differentiating this top 1 with respect to x we get d2z by DX DY and that's 6 X cosine 3y for this sort of simple example it's pretty obvious that those are equal so let's just note the Equality of those 2nd of those mixed partial derivatives independent of the Order of taking the derivative so even for more complicated functions and badly behaved functions we end up with these",
+        "confidence": 1
+    },
+    {
+        "timestamp": "42:14.000",
+        "text": "mixed partial derivatives being equal under a very mild condition that as long as those derivatives of continuous functions that you can show there they're equal that's a theorem that can be proved it's not something that we will do here or indeed in the engineering course we just take that as has given so let me just emphasize this is a very mild condition that those are continuous so in practice we always we can always assume we have equality there so one further note d2f DX DY is the rate of change in the X Direction",
+        "confidence": 1
+    },
+    {
+        "timestamp": "43:32.000",
+        "text": "of the slope in the Y Direction so this corresponds to a local twist or torsion in the surface so we're taking the DF by DX and we're looking at how that slope varies as we vary in the Y Direction so that gives the idea of the twist in the surface and doing that same experiment varying the tangent in the Y Direction varying as a function of x you get the same value for that that derivative that that twist in the surface ok so I'd like to move on now to the chain rule now",
+        "confidence": 1
+    },
+    {
+        "timestamp": "45:08.000",
+        "text": "the chain rule you will have seen in some forms already the chain room is about a function of a function and differentiating a function of a function but now we want to look at how that's going to work when you have several variables involved so consider again Z is f of X and Y so I'm going to look at Z as a function of x 1 + delta x y1 and by the ordinary Taylor series this can be expressed as z of x1 y1 + delta x times partial dz by dx of X1 y1 and",
+        "confidence": 1
+    },
+    {
+        "timestamp": "46:29.000",
+        "text": "in terms of the plot here I'm going to draw the surface through those two points lying about X1 y1 which is this point this point here which is x1 + delta x , y1 and what we're doing with the Taylor series is just taking the tangent here at this point and approximating the value at the neighbouring point with by extending the tangent so the next thing I want to do is to consider a perturbation in y and I take Z of X1 + delta x Y1 + delta Y and that's approximately equal to z of x1 +",
+        "confidence": 1
+    },
+    {
+        "timestamp": "48:00.000",
+        "text": "delta x , y1 + delta y times partial dZ by dy at x1 plus delta x comma y1 so what we doing here we're looking now for this point x1 + delta x y1 plus delta y so we want to find the value of the function at this point here again by taking the tangent at the point on the surface above the point x1 plus delta x y1 and this is the expression we get with the Taylor series and what I want to do is 1 further approximation here and say well first",
+        "confidence": 1
+    },
+    {
+        "timestamp": "49:33.000",
+        "text": "term stays the same z of x1 + delta x, y1 and plus delta y times partial DZ by DY at X1 Y1 so the only difference here is that the delta x here has disappeared and the reason why we can make that approximation is writing things out more fully if we do a Taylor series approximation of this then we end up with a second order term something like this delta Y delta X times a second mixed partial derivative and we're eventually going to take limits and the second order small quantities are going to disappear so it's a",
+        "confidence": 1
+    },
+    {
+        "timestamp": "50:35.000",
+        "text": "second order quantity that is different between those two steps so that I'm going to call equation 2 and we'll continue from that point next time",
+        "confidence": 1
+    }
+]

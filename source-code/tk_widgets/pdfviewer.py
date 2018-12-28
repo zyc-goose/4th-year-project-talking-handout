@@ -26,7 +26,7 @@ class PDFViewer(Component):
         self.frame.rowconfigure(0, weight=1)
         self.frame.rowconfigure(1, weight=0)
         self.frame.columnconfigure(0, weight=1)
-        # Add Listeners
+        # Listeners
         self.addListener('<PageChange>', self.handlePageChange)
         # Set Initial State
         if self.images:

@@ -12,18 +12,26 @@ class MainFrame(Component):
         pdfpath = filedialog.askopenfilename()
         self.viewer = PDFViewer(self, pdfpath)
         self.viewer.configure(
-            width=300, height=300
+            width=300, height=500,
+            borderwidth=4, relief='ridge'
         )
         # Right Frame: Control Panel
         self.panel = PDFViewer(self)
         self.panel.configure(
-            width=300, height=300,
-            borderwidth=10, relief='ridge'
+            width=300, height=500,
+            borderwidth=4, relief='ridge'
+        )
+        # Status Bar
+        self.status = StatusBar(self)
+        self.status.configure(
+            height=30
         )
         # Grid Configuration
-        self.viewer.grid(row=0, column=0, sticky=(N,S,E,W))
-        self.panel.grid(row=0, column=1, sticky=(N,S,E,W))
+        self.viewer.grid(row=0, column=0, sticky=NSEW)
+        self.panel.grid(row=0, column=1, sticky=NSEW)
+        self.status.grid(row=1, column=0, columnspan=2, sticky=NSEW)
         self.frame.rowconfigure(0, weight=1)
+        self.frame.rowconfigure(1, weight=0)
         self.frame.columnconfigure(0, weight=1)
         self.frame.columnconfigure(1, weight=1)
         # Bindings
@@ -31,3 +39,20 @@ class MainFrame(Component):
     
     def print(self, event):
         print(event.width, event.height)
+
+
+class StatusBar(Component):
+    def __init__(self, parent):
+        super().__init__(parent, 'StatusBar')
+        # Status Label
+        self.statusText = StringVar()
+        self.statusText.set('Ready')
+        self.status = ttk.Label(self.frame)
+        self.status.configure(textvariable=self.statusText)
+        # Listeners
+        self.addListener('<StatusUpdate>', self.handleStatusUpdate)
+        # Grid Configuration
+        self.status.grid(row=0, column=0, sticky=W)
+    
+    def handleStatusUpdate(self, event):
+        self.statusText.set(event['message'])

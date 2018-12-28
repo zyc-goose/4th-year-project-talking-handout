@@ -73,4 +73,8 @@ class Component:
     def afterSetState(self):
         """To be implemented by user."""
         pass
-            
+    
+    def updateStatusBar(self, message):
+        """Sugar for emitting <StatusUpdate> event."""
+        event = dict(name='<StatusUpdate>', message=message)
+        self.emitEvent('MainFrame', event)

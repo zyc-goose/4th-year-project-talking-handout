@@ -17,7 +17,6 @@ class PDFViewer(Component):
             self.images = None
         # Main PDF Canvas
         self.canvas = MainCanvas(self)
-        
         # PDF Page Navigator
         self.navigator = Navigator(self)
         # Grid Configuration
@@ -28,6 +27,7 @@ class PDFViewer(Component):
         self.frame.columnconfigure(0, weight=1)
         # Listeners
         self.addListener('<PageChange>', self.handlePageChange)
+        self.addListener('<FileLoaded>', self.handleFileLoaded)
         # Set Initial State
         if self.images:
             curPage, totalPage = 1, len(self.images)
@@ -37,9 +37,18 @@ class PDFViewer(Component):
             curPage=curPage, totalPage=totalPage,
             images=self.images
         )
+        self.requestRects()
+    
+    def requestRects(self):
+        event = dict(name='<RequestRects>', page=self.state['curPage'])
+        self.emitEvent('MainFrame', event)
     
     def handlePageChange(self, event):
         self.setState(curPage=event['newPage'])
+        self.requestRects()
+    
+    def handleFileLoaded(self, event):
+        self.requestRects()
     
     def afterSetState(self):
         curPage, totalPage = self.state['curPage'], self.state['totalPage']
@@ -48,7 +57,7 @@ class PDFViewer(Component):
         else:
             image = None
         self.navigator.setState(curPage=curPage, totalPage=totalPage)
-        self.canvas.setState(image=image)
+        self.canvas.setState(image=image, page=curPage)
 
 
 class Navigator(Component):

@@ -3,8 +3,8 @@ from tkinter import ttk
 from tkinter import filedialog
 
 from component import Component
-import json
-import os
+from uuid import uuid4
+import json, os
 
 class PageSegmentation(Component):
     def __init__(self, parent):
@@ -39,6 +39,8 @@ class PageSegmentation(Component):
         self.filenameLabel.configure(
             textvariable=self.varFileName, padding=(1,5)
         )
+        # Listeners
+        self.addListener('<RequestRects>', self.handleRequestRects)
         # Grid Configuration
         self.labelframe.grid(row=0, column=0, sticky=NSEW)
         self.buttonNew.grid(row=0, column=0, sticky=W)
@@ -52,6 +54,9 @@ class PageSegmentation(Component):
     def setFilePath(self, filepath):
         self.filepath = filepath
         self.setState(filename=os.path.basename(filepath))
+        # Emit FileLoaded event
+        event = dict(name='<FileLoaded>')
+        self.emitEvent('MainFrame', event)
     
     def readFile(self, filepath):
         if not filepath:
@@ -86,8 +91,27 @@ class PageSegmentation(Component):
     def onClickListen(self):
         if self.state['listen']:
             self.setState(listen=False)
+            self.removeListener('<NewRectFinished>', self.handleNewRectFinished)
         else:
             self.setState(listen=True)
+            self.addListener('<NewRectFinished>', self.handleNewRectFinished)
+    
+    def handleNewRectFinished(self, event):
+        rect = dict(
+            id=str(uuid4()),
+            page=event['page'],
+            selected=False,
+            coords=event['coords']
+        )
+        self.filebuf.append(rect)
+        self.updateStatusBar('New Rectangle Received')
+    
+    def handleRequestRects(self, event):
+        res = dict(
+            name='<ResponseRects>',
+            rects=list(filter(lambda x: x['page'] == event['page'], self.filebuf))
+        )
+        self.emitEvent('MainFrame', res)
     
     def afterSetState(self):
         self.varFileName.set('Current File: ' + self.state['filename'])

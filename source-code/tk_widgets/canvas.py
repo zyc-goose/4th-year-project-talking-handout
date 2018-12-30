@@ -27,16 +27,27 @@ class MainCanvas(Component):
         self.setState(image=None, width=350, height=600)
     
     def handleClick(self, event):
+        # Show event and coordinates
         coord = ' pos=(%d,%d)' % (event.x, event.y)
         self.updateStatusBar('<Button-1>' + coord)
+        # Create active rectangle
+        self.activeRect = self.canvas.create_rectangle(event.x, event.y, event.x, event.y, fill='', outline='green')
+        self.arX, self.arY = event.x, event.y
     
     def handleMotion(self, event):
+        # Show event and coordinates
         coord = ' pos=(%d,%d)' % (event.x, event.y)
         self.updateStatusBar('<B1-Motion>' + coord)
+        # Update coordinates of active rectangle
+        self.canvas.coords(self.activeRect, self.arX, self.arY, event.x, event.y)
     
     def handleRelease(self, event):
+        # Show event and coordinates
         coord = ' pos=(%d,%d)' % (event.x, event.y)
         self.updateStatusBar('<B1-ButtonRelease>' + coord)
+        # Remove active rectangle
+        self.canvas.delete(self.activeRect)
+        self.activeRect = None
     
     def handleConfigure(self, event):
         width = event.width

@@ -4,6 +4,7 @@ from tkinter import filedialog
 
 from component import Component
 from pdfviewer import PDFViewer
+from controlpanel import ControlPanel
 
 class MainFrame(Component):
     def __init__(self, parent):
@@ -16,10 +17,9 @@ class MainFrame(Component):
             borderwidth=4, relief='ridge'
         )
         # Right Frame: Control Panel
-        self.panel = PDFViewer(self)
+        self.panel = ControlPanel(self)
         self.panel.configure(
             width=300, height=500,
-            borderwidth=4, relief='ridge'
         )
         # Status Bar
         self.status = StatusBar(self)
@@ -33,7 +33,7 @@ class MainFrame(Component):
         self.frame.rowconfigure(0, weight=1)
         self.frame.rowconfigure(1, weight=0)
         self.frame.columnconfigure(0, weight=1)
-        self.frame.columnconfigure(1, weight=1)
+        self.frame.columnconfigure(1, weight=0)
         # Bindings
         self.frame.bind('<Configure>', self.print)
     

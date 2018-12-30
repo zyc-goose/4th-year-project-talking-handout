@@ -25,6 +25,9 @@ class Component:
     def grid(self, **config):
         self.frame.grid(**config)
     
+    def forget(self):
+        self.frame.grid_forget()
+    
     def addListener(self, eventName, callback):
         """Add an event listener to this component. A listener
         is a callback function which will be called when a certain

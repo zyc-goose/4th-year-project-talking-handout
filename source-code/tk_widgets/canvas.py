@@ -29,8 +29,10 @@ class MainCanvas(Component):
         self.canvas.bind('<B1-Motion>', self.handleMotionB1)
         self.canvas.bind('<B1-ButtonRelease>', self.handleReleaseB1)
         self.canvas.bind('<Motion>', self.handleMotion)
+        self.canvas.bind('<MouseWheel>', self.handleMouseWheel)
         # Listeners
         self.addListener('<ResponseRects>', self.handleResponseRects)
+        self.addListener('<PageChange>', self.handlePageChange)
         # Set Initial State
         self.setState(
             image=None, page=0, width=350, height=495,
@@ -161,6 +163,12 @@ class MainCanvas(Component):
         height = int(width * sqrt(2))
         print(width, height)
         self.setState(width=width, height=height)
+    
+    def handleMouseWheel(self, event):
+        self.canvas.yview_scroll(-event.delta, 'units')
+    
+    def handlePageChange(self, event):
+        self.canvas.yview_moveto(0.0)
     
     def afterSetState(self):
         image = self.state['image']

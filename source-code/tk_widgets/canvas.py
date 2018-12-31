@@ -9,17 +9,22 @@ class MainCanvas(Component):
     def __init__(self, parent):
         super().__init__(parent, 'MainCanvas')
         # Canvas
-        # self.vscroll = ttk.Scrollbar(self.frame, orient=VERTICAL)
+        self.vscroll = ttk.Scrollbar(self.frame, orient=VERTICAL)
         self.canvas = Canvas(self.frame)
         self.canvas.configure(
-            width=350, height=600
+            background='silver',
+            width=350, height=600,
+            scrollregion=(0,0,350,600),
+            yscrollcommand=self.vscroll.set
         )
+        self.vscroll.configure(command=self.canvas.yview)
         # Grid Configuration
         self.canvas.grid(row=0, column=0, sticky=(N,S,E,W))
+        self.vscroll.grid(row=0, column=1, sticky=(N,S))
         self.frame.rowconfigure(0, weight=1)
         self.frame.columnconfigure(0, weight=1)
         # Bindings
-        self.frame.bind('<Configure>', self.handleConfigure)
+        self.canvas.bind('<Configure>', self.handleConfigure)
         self.canvas.bind('<Button-1>', self.handleClickB1)
         self.canvas.bind('<B1-Motion>', self.handleMotionB1)
         self.canvas.bind('<B1-ButtonRelease>', self.handleReleaseB1)
@@ -89,8 +94,10 @@ class MainCanvas(Component):
         self.setState(rects=event['rects'])
     
     def handleMotion(self, event):
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
         # Find rect under cursor
-        tarRect = self.findRectAt(event.x, event.y)
+        tarRect = self.findRectAt(x, y)
         tarRectID = tarRect['id'] if tarRect else None
         # Update rectangle highlighting
         for rect in self.state['rects']:
@@ -102,26 +109,32 @@ class MainCanvas(Component):
                 self.canvas.itemconfig(rect['canvasID'], outline='blue')
     
     def handleClickB1(self, event):
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
         # Show event and coordinates
-        coord = ' pos=(%d,%d)' % (event.x, event.y)
+        coord = ' pos=(%d,%d)' % (x, y)
         self.updateStatusBar('<Button-1>' + coord)
         # Find rectangle under cursor, if exists
-        rect = self.findRectAt(event.x, event.y)
+        rect = self.findRectAt(x, y)
         self.selectedRectID = rect['id'] if rect else None
         # Create active rectangle
-        self.activeRect = self.canvas.create_rectangle(event.x, event.y, event.x, event.y, fill='', outline='green')
-        self.arX, self.arY = event.x, event.y
+        self.activeRect = self.canvas.create_rectangle(x, y, x, y, fill='', outline='green')
+        self.arX, self.arY = x, y
     
     def handleMotionB1(self, event):
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
         # Show event and coordinates
-        coord = ' pos=(%d,%d)' % (event.x, event.y)
+        coord = ' pos=(%d,%d)' % (x, y)
         self.updateStatusBar('<B1-Motion>' + coord)
         # Update coordinates of active rectangle
-        self.canvas.coords(self.activeRect, self.arX, self.arY, event.x, event.y)
+        self.canvas.coords(self.activeRect, self.arX, self.arY, x, y)
     
     def handleReleaseB1(self, event):
+        x = self.canvas.canvasx(event.x)
+        y = self.canvas.canvasy(event.y)
         # Show event and coordinates
-        coord = ' pos=(%d,%d)' % (event.x, event.y)
+        coord = ' pos=(%d,%d)' % (x, y)
         self.updateStatusBar('<B1-ButtonRelease>' + coord)
         # Check the area of the active rectangle
         coords = self.canvas.coords(self.activeRect)
@@ -146,12 +159,14 @@ class MainCanvas(Component):
     def handleConfigure(self, event):
         width = event.width
         height = int(width * sqrt(2))
+        print(width, height)
         self.setState(width=width, height=height)
     
     def afterSetState(self):
         image = self.state['image']
         if image:
             width, height = self.state['width'], self.state['height']
+            self.canvas.configure(scrollregion=(0,0,width,height))
             image = image.resize((width, height), Image.ANTIALIAS)
             self.image = ImageTk.PhotoImage(image=image)
             self.canvas.create_image(0, 0, image=self.image, anchor=NW)

@@ -43,6 +43,9 @@ class MainCanvas(Component):
                 return rect
         return None
     
+    def getRectArea(self, x0, y0, x1, y1):
+        return (x1 - x0) * (y1 - y0)
+    
     def encodeRect(self, x0, y0, x1, y1):
         """From canvas coordinates to PDF coordinates."""
         canvasWidth, canvasHeight = self.state['width'], self.state['height']
@@ -93,6 +96,8 @@ class MainCanvas(Component):
         for rect in self.state['rects']:
             if rect['id'] == tarRectID:
                 self.canvas.itemconfig(rect['canvasID'], outline='orange')
+            elif rect['selected']:
+                self.canvas.itemconfig(rect['canvasID'], outline='red')
             else:
                 self.canvas.itemconfig(rect['canvasID'], outline='blue')
     
@@ -100,6 +105,9 @@ class MainCanvas(Component):
         # Show event and coordinates
         coord = ' pos=(%d,%d)' % (event.x, event.y)
         self.updateStatusBar('<Button-1>' + coord)
+        # Find rectangle under cursor, if exists
+        rect = self.findRectAt(event.x, event.y)
+        self.selectedRectID = rect['id'] if rect else None
         # Create active rectangle
         self.activeRect = self.canvas.create_rectangle(event.x, event.y, event.x, event.y, fill='', outline='green')
         self.arX, self.arY = event.x, event.y
@@ -115,12 +123,19 @@ class MainCanvas(Component):
         # Show event and coordinates
         coord = ' pos=(%d,%d)' % (event.x, event.y)
         self.updateStatusBar('<B1-ButtonRelease>' + coord)
-        # Send active rectangle as event
-        event = dict(
-            name='<NewRectFinished>',
-            page=self.state['page'],
-            coords=self.encodeRect(*self.canvas.coords(self.activeRect))
-        )
+        # Check the area of the active rectangle
+        coords = self.canvas.coords(self.activeRect)
+        if self.getRectArea(*coords) < 10: # a click
+            if self.selectedRectID:
+                event = dict(name='<SelectRect>', id=self.selectedRectID)
+            else:
+                event = dict(name='<DeselectRect>')
+        else:
+            event = dict(
+                name='<NewRectFinished>',
+                page=self.state['page'],
+                coords=self.encodeRect(*self.canvas.coords(self.activeRect))
+            )
         self.emitEvent('MainFrame', event)
         # Remove active rectangle
         self.canvas.delete(self.activeRect)

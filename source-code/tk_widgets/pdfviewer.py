@@ -27,7 +27,7 @@ class PDFViewer(Component):
         self.frame.columnconfigure(0, weight=1)
         # Listeners
         self.addListener('<PageChange>', self.handlePageChange)
-        self.addListener('<FileLoaded>', self.handleFileLoaded)
+        self.addListener('<FileBufferChanged>', self.handleFileBufferChanged)
         # Set Initial State
         if self.images:
             curPage, totalPage = 1, len(self.images)
@@ -47,7 +47,7 @@ class PDFViewer(Component):
         self.setState(curPage=event['newPage'])
         self.requestRects()
     
-    def handleFileLoaded(self, event):
+    def handleFileBufferChanged(self, event):
         self.requestRects()
     
     def afterSetState(self):

@@ -1,0 +1,486 @@
+[
+    {
+        "id": "1f3e031e-176b-4238-a6e3-e092bc09ebab",
+        "page": 1,
+        "coords": [
+            494,
+            221,
+            1059,
+            327
+        ],
+        "selected": false
+    },
+    {
+        "id": "563edf3b-f86a-47a1-a989-2fe4a972b29f",
+        "page": 1,
+        "coords": [
+            297,
+            391,
+            1253,
+            433
+        ],
+        "selected": false
+    },
+    {
+        "id": "19f93b8f-33c8-4b7a-a4bb-87f982af27fb",
+        "page": 1,
+        "coords": [
+            220,
+            489,
+            1329,
+            623
+        ],
+        "selected": false
+    },
+    {
+        "id": "5019937b-d1cf-47e4-b24b-c1091e00b932",
+        "page": 1,
+        "coords": [
+            221,
+            684,
+            1313,
+            720
+        ],
+        "selected": false
+    },
+    {
+        "id": "87659ebe-feeb-4bc4-ad31-494ca93c1220",
+        "page": 1,
+        "coords": [
+            219,
+            752,
+            804,
+            780
+        ],
+        "selected": false
+    },
+    {
+        "id": "73f42183-8dc6-450a-9400-a212fcb4a7f5",
+        "page": 1,
+        "coords": [
+            1028,
+            777,
+            1321,
+            843
+        ],
+        "selected": false
+    },
+    {
+        "id": "38d69301-28b8-463a-90fa-5803621a85d4",
+        "page": 1,
+        "coords": [
+            217,
+            815,
+            1331,
+            1014
+        ],
+        "selected": false
+    },
+    {
+        "id": "137c7db0-6213-46a0-9c8e-7caee7926ffe",
+        "page": 1,
+        "coords": [
+            216,
+            1027,
+            844,
+            1063
+        ],
+        "selected": false
+    },
+    {
+        "id": "a961cd09-b3f7-44ce-99e8-0ebd0c5e632f",
+        "page": 1,
+        "coords": [
+            209,
+            1815,
+            1307,
+            1852
+        ],
+        "selected": false
+    },
+    {
+        "id": "19ecd36d-ddd7-469b-8c1c-a9b4cce3d0f9",
+        "page": 2,
+        "coords": [
+            205,
+            666,
+            1314,
+            747
+        ],
+        "selected": false
+    },
+    {
+        "id": "0c209a23-0d42-46b1-a811-a63c02174774",
+        "page": 2,
+        "coords": [
+            1267,
+            1013,
+            1422,
+            1052
+        ],
+        "selected": false
+    },
+    {
+        "id": "b946c858-f4db-4b3e-9262-0f9858fe7dce",
+        "page": 2,
+        "coords": [
+            189,
+            1195,
+            1310,
+            1504
+        ],
+        "selected": false
+    },
+    {
+        "id": "ee2cd27e-03bb-4672-9ea8-f6fe620f0312",
+        "page": 2,
+        "coords": [
+            145,
+            1467,
+            383,
+            1537
+        ],
+        "selected": false
+    },
+    {
+        "id": "6d213c02-ec37-4000-a51b-8673224c0b22",
+        "page": 2,
+        "coords": [
+            200,
+            1583,
+            831,
+            1610
+        ],
+        "selected": false
+    },
+    {
+        "id": "7517876b-cc35-445b-8099-5c51ea7bc6b5",
+        "page": 3,
+        "coords": [
+            213,
+            621,
+            1376,
+            811
+        ],
+        "selected": false
+    },
+    {
+        "id": "28309f4d-0b61-4f0f-a2df-b63b106d12da",
+        "page": 3,
+        "coords": [
+            205,
+            897,
+            1320,
+            1028
+        ],
+        "selected": false
+    },
+    {
+        "id": "691d438a-c20a-4d83-a65d-b5daf55c881e",
+        "page": 3,
+        "coords": [
+            204,
+            1057,
+            1302,
+            1372
+        ],
+        "selected": false
+    },
+    {
+        "id": "74a50177-8506-46f4-890e-38b2bb4d57d9",
+        "page": 3,
+        "coords": [
+            1021,
+            1381,
+            1342,
+            1531
+        ],
+        "selected": false
+    },
+    {
+        "id": "2466bb36-1ced-4850-ad7f-0c041ce5258e",
+        "page": 4,
+        "coords": [
+            218,
+            146,
+            1323,
+            271
+        ],
+        "selected": false
+    },
+    {
+        "id": "072c35cc-1497-44c3-9d3a-33723c4fa5a6",
+        "page": 4,
+        "coords": [
+            216,
+            341,
+            1155,
+            461
+        ],
+        "selected": false
+    },
+    {
+        "id": "a805ca43-d738-4632-96ca-dcd875e79082",
+        "page": 4,
+        "coords": [
+            203,
+            482,
+            1491,
+            961
+        ],
+        "selected": false
+    },
+    {
+        "id": "3751bf2d-91ee-481e-a7fa-b4d24ab61f6a",
+        "page": 4,
+        "coords": [
+            202,
+            984,
+            991,
+            1028
+        ],
+        "selected": false
+    },
+    {
+        "id": "780c6553-ae5f-4a01-bc44-72d0e5a477a6",
+        "page": 4,
+        "coords": [
+            230,
+            1088,
+            1391,
+            1303
+        ],
+        "selected": false
+    },
+    {
+        "id": "9adcc97c-3c5a-4e5c-b088-9bfa5ecb6ace",
+        "page": 4,
+        "coords": [
+            190,
+            1512,
+            1310,
+            1583
+        ],
+        "selected": false
+    },
+    {
+        "id": "ae8b93dd-2e39-4014-a8bf-b392542e2af6",
+        "page": 4,
+        "coords": [
+            188,
+            1590,
+            771,
+            1708
+        ],
+        "selected": false
+    },
+    {
+        "id": "0e88d75f-7d36-48cd-8c45-565bcebcb4b0",
+        "page": 4,
+        "coords": [
+            183,
+            1730,
+            1309,
+            1910
+        ],
+        "selected": false
+    },
+    {
+        "id": "3a5aa602-0923-449b-99cf-33cf4203c2dd",
+        "page": 5,
+        "coords": [
+            229,
+            126,
+            1475,
+            172
+        ],
+        "selected": false
+    },
+    {
+        "id": "868945fc-cf21-4da2-bcb1-6a117bb45f38",
+        "page": 5,
+        "coords": [
+            226,
+            686,
+            1410,
+            726
+        ],
+        "selected": false
+    },
+    {
+        "id": "2307e4fe-697c-4ef2-8130-29c48cee2ede",
+        "page": 5,
+        "coords": [
+            227,
+            786,
+            1016,
+            880
+        ],
+        "selected": false
+    },
+    {
+        "id": "f84ca8d4-7441-41bd-a818-919aa2bcf148",
+        "page": 5,
+        "coords": [
+            226,
+            866,
+            1475,
+            931
+        ],
+        "selected": false
+    },
+    {
+        "id": "0d8b98fd-2f56-418c-a7cd-2db24075634f",
+        "page": 5,
+        "coords": [
+            224,
+            932,
+            1422,
+            1006
+        ],
+        "selected": false
+    },
+    {
+        "id": "868df021-921b-49b0-a823-e70301b1e940",
+        "page": 5,
+        "coords": [
+            223,
+            1336,
+            1447,
+            1529
+        ],
+        "selected": false
+    },
+    {
+        "id": "48d5c73d-b70f-4279-91ed-73b81935c9a1",
+        "page": 5,
+        "coords": [
+            397,
+            1507,
+            1557,
+            1855
+        ],
+        "selected": false
+    },
+    {
+        "id": "fbd9721a-6c7e-4bd1-babd-82d82667bd3f",
+        "page": 5,
+        "coords": [
+            382,
+            1932,
+            1563,
+            2126
+        ],
+        "selected": false
+    },
+    {
+        "id": "8d6569ec-24b4-4cd7-8e1c-72d1b17fe43a",
+        "page": 5,
+        "coords": [
+            683,
+            2196,
+            1207,
+            2297
+        ],
+        "selected": false
+    },
+    {
+        "id": "10cd2ccc-833b-41a9-9a55-f002f1d4164c",
+        "page": 6,
+        "coords": [
+            233,
+            133,
+            1480,
+            161
+        ],
+        "selected": false
+    },
+    {
+        "id": "9b8cd38d-8d44-4aee-8bce-fd9c0afb7d5e",
+        "page": 6,
+        "coords": [
+            493,
+            231,
+            778,
+            331
+        ],
+        "selected": false
+    },
+    {
+        "id": "31b840a7-6299-4d02-8e93-2f54fe22154d",
+        "page": 6,
+        "coords": [
+            230,
+            341,
+            1591,
+            583
+        ],
+        "selected": false
+    },
+    {
+        "id": "40df732a-3714-4151-881e-19a34d2573a5",
+        "page": 6,
+        "coords": [
+            234,
+            561,
+            1412,
+            658
+        ],
+        "selected": false
+    },
+    {
+        "id": "33170c95-5339-4db8-bffc-234c9d902c96",
+        "page": 6,
+        "coords": [
+            232,
+            262,
+            1349,
+            304
+        ],
+        "selected": false
+    },
+    {
+        "id": "abd79474-c47c-49eb-b457-e6747ef81e9f",
+        "page": 6,
+        "coords": [
+            230,
+            658,
+            712,
+            784
+        ],
+        "selected": false
+    },
+    {
+        "id": "1291806e-2bf3-4cda-b623-562e5542ab8a",
+        "page": 6,
+        "coords": [
+            228,
+            1224,
+            1477,
+            1443
+        ],
+        "selected": false
+    },
+    {
+        "id": "78cd3dc9-6816-45a7-8273-3240458aa9f1",
+        "page": 6,
+        "coords": [
+            225,
+            1737,
+            1364,
+            1807
+        ],
+        "selected": false
+    },
+    {
+        "id": "29f40faf-e3a4-42a5-9de6-8284c8b6bb23",
+        "page": 6,
+        "coords": [
+            464,
+            2144,
+            1593,
+            2275
+        ],
+        "selected": false
+    }
+]

@@ -1,0 +1,8 @@
+{
+    "pdfPath": "/Users/zyc/Desktop/mcs_lectures/handouts/smith-0426.pdf",
+    "trueRectsPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/pageseg.json",
+    "OCRParsPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/paragraphs.json",
+    "rectsPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/pageseg.json",
+    "transPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/transcript.json",
+    "trueTransPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/transcript.json"
+}

@@ -1,0 +1,78 @@
+[
+    {
+        "parID": 4,
+        "segID": 2
+    },
+    {
+        "parID": 6,
+        "segID": 5
+    },
+    {
+        "parID": 8,
+        "segID": 16
+    },
+    {
+        "parID": 9,
+        "segID": 27
+    },
+    {
+        "parID": 11,
+        "segID": 35
+    },
+    {
+        "parID": 14,
+        "segID": 57
+    },
+    {
+        "parID": 15,
+        "segID": 58
+    },
+    {
+        "parID": 16,
+        "segID": 67
+    },
+    {
+        "parID": 19,
+        "segID": 81
+    },
+    {
+        "parID": 20,
+        "segID": 84
+    },
+    {
+        "parID": 21,
+        "segID": 107
+    },
+    {
+        "parID": 23,
+        "segID": 136
+    },
+    {
+        "parID": 25,
+        "segID": 137
+    },
+    {
+        "parID": 27,
+        "segID": 156
+    },
+    {
+        "parID": 29,
+        "segID": 157
+    },
+    {
+        "parID": 39,
+        "segID": 212
+    },
+    {
+        "parID": 37,
+        "segID": 219
+    },
+    {
+        "parID": 41,
+        "segID": 227
+    },
+    {
+        "parID": 42,
+        "segID": 239
+    }
+]

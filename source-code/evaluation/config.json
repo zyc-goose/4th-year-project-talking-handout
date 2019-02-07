@@ -4,5 +4,8 @@
     "OCRParsPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/paragraphs.json",
     "rectsPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/pageseg.json",
     "transPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/transcript.json",
-    "trueTransPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/transcript.json"
+    "trueTransPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/transcript.json",
+    "alignPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/output/alignment.json",
+    "trueAlignPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/alignment.json",
+    "trueTextRecPath": "/Users/zyc/Documents/cam/courses/y4/project/source-code/ground-truth/textrec.json"
 }

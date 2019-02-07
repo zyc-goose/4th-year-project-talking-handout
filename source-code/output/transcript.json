@@ -2,1326 +2,1591 @@
     {
         "timestamp": "00:00.000",
         "text": "thank you and there's an a handout which I hope you can all see for the next time for lectures here so let me just start with this Sam transparency here which is just a print out from the syllabus on our webpage so we're on to know the last 7 letters of the maths course and it's 2 topics we going to come cover functions of several variables here that will last for for lectures and then we have introduction to Laplace transforms to three lectures and as a separate handout coming for the Laplace transforms part the references here and there are three books that are relevant and James modern engineering mathematics that covers the basics of both these topics",
-        "confidence": 0.9585754871368408
+        "confidence": 0.9585754871368408,
+        "id": 0
     },
     {
         "timestamp": "01:00.100",
         "text": "and the advanced modern James also covers both topics but I'm leaving on and especially in this first four letters leaning on two workbooks coming next year of the Mask was in the Michaelmas term or vector calculus Crisis book again it's comparable to the James II reference it gives a thorough and in-depth treatment of both these topics and it leads well onto secondary material my intention is to provide you notes on both these topics which will be a sufficient treatment for the purposes of the first year and for the examination so these and you don't need to buy them unless you wish and they're useful as as references so am",
-        "confidence": 0.955245316028595
+        "confidence": 0.955245316028595,
+        "id": 1
     },
     {
         "timestamp": "01:59.800",
         "text": "let's make a start then with a first-hand out so we talking about functions of several variables we're going to do calculus differentiation of such functions and and end up with looking Taylor series so a little bit of this you've had already in the Michaelmas term with partial derivatives will cover a little bit of that and quickly and then go on to the new material the first couple of pages are just a few comments on graphical representations and just eat to get everything going so let's start with the function of two variables so Z = f of X and Y",
-        "confidence": 0.9471765160560608
+        "confidence": 0.9471765160560608,
+        "id": 2
     },
     {
         "timestamp": "02:53.100",
         "text": "and X and Y",
-        "confidence": 0.966408371925354
+        "confidence": 0.966408371925354,
+        "id": 3
     },
     {
         "timestamp": "02:59.000",
         "text": " are the independent variable",
-        "confidence": 0.9027818441390991
+        "confidence": 0.9027818441390991,
+        "id": 4
     },
     {
         "timestamp": "03:08.600",
         "text": " those can be freely adjusted and Z is the dependent variable that determine its value is determined by the function f so in terms of graphical representations we can represent such a function as a surface in three dimensions this is very familiar so to draw it we can construct some lines in the surface so here's my three axis X and Y are independent variables and Z is the dependent variable and",
-        "confidence": 0.9585759043693542
+        "confidence": 0.9585759043693542,
+        "id": 5
     },
     {
         "timestamp": "03:49.000",
         "text": " these lines here y1 Y2 and these are lines of x constant X1 and X2 and we draw lines in the surface lying above these lines of constant x and constant y and so we get",
-        "confidence": 0.9585541486740112
+        "confidence": 0.9585541486740112,
+        "id": 6
     },
     {
         "timestamp": "04:15.500",
         "text": " something like this does the lines about constant aches and",
-        "confidence": 0.8620868921279907
+        "confidence": 0.8620868921279907,
+        "id": 7
     },
     {
         "timestamp": "04:25.000",
         "text": " and these are the ones over constant why",
-        "confidence": 0.9502220153808594
+        "confidence": 0.9502220153808594,
+        "id": 8
     },
     {
         "timestamp": "04:31.600",
         "text": " and so you build up a mesh for the surface in this way and as I say this is very familiar we see this all the time you're a couple of examples from thermodynamics here so we have pressure as a function of specific volume and temperature are sorry this is this is just an example it's not part of the handout I'm just giving you some examples of that picture so it's a function of two variables independent variable specific volume and temperature and here we have the 3D plot is a similar one from soil mechanics",
-        "confidence": 0.9462550282478333
+        "confidence": 0.9462550282478333,
+        "id": 9
     },
     {
         "timestamp": "05:20.900",
         "text": " unfrozen water content temperature is the Independent variables osmotic pressure and osmotic potential as the desired variable the dependent variable",
-        "confidence": 0.9168593883514404
+        "confidence": 0.9168593883514404,
+        "id": 10
     },
     {
         "timestamp": "05:38.700",
         "text": " here's one from aerodynamics this is an aerofoil and we're looking at pressure",
-        "confidence": 0.9535052180290222
+        "confidence": 0.9535052180290222,
+        "id": 11
     },
     {
         "timestamp": "05:46.100",
         "text": " against two variables here chord wise position",
-        "confidence": 0.8684452176094055
+        "confidence": 0.8684452176094055,
+        "id": 12
     },
     {
         "timestamp": "05:53.200",
         "text": " and the angle of attack",
-        "confidence": 0.942789614200592
+        "confidence": 0.942789614200592,
+        "id": 13
     },
     {
         "timestamp": "05:58.400",
         "text": " and so this is a three dimensional thought we have chord wise position here and we have angle of attack in the other axis",
-        "confidence": 0.9134218096733093
+        "confidence": 0.9134218096733093,
+        "id": 14
     },
     {
         "timestamp": "06:07.900",
         "text": " so as I say that's all very familiar to you it's not by any means the only way to graphically represent functions of several variables",
-        "confidence": 0.9642056822776794
+        "confidence": 0.9642056822776794,
+        "id": 15
     },
     {
         "timestamp": "06:30.400",
         "text": " so another way is with a contour map so here we just draw x y and x-axis and we drove Contours",
-        "confidence": 0.9471118450164795
+        "confidence": 0.9471118450164795,
+        "id": 16
     },
     {
         "timestamp": "06:53.500",
         "text": " so something like this",
-        "confidence": 0.81346595287323
+        "confidence": 0.81346595287323,
+        "id": 17
     },
     {
         "timestamp": "06:56.500",
         "text": " and let's say this would be said his Z1",
-        "confidence": 0.9212144017219543
+        "confidence": 0.9212144017219543,
+        "id": 18
     },
     {
         "timestamp": "07:08.500",
         "text": " Z = Z2 so those lines represent constant values of the dependent variable Z so once again this is very familiar",
-        "confidence": 0.9334775805473328
+        "confidence": 0.9334775805473328,
+        "id": 19
     },
     {
         "timestamp": "07:28.600",
         "text": " here's one example from electrostatic so we have two parallel conductors and we looking at the potential field voltage as a function of X and Y the independent variable and we're looking at the equipotentials equimins equal potential so the voltage is a constant on those lines so that's a contour map of potential here's an example from aerodynamics an aerofoil again and we looking at number am as a function of X and Y Mac number is ratio of the velocity of the flow to the velocity of Sound And Soul in the magnified picture here you see this blue line is m = 1 which is actually called the sonic line so this is where the floor has",
-        "confidence": 0.9586499929428101
+        "confidence": 0.9586499929428101,
+        "id": 20
     },
     {
         "timestamp": "08:28.600",
         "text": " one and then we have the supersonic region here and greater than 1 of a subsonic less than 1",
-        "confidence": 0.8979312777519226
+        "confidence": 0.8979312777519226,
+        "id": 21
     },
     {
         "timestamp": "08:39.200",
         "text": " so let's just say then e.g. are equipotentials",
-        "confidence": 0.8977360129356384
+        "confidence": 0.8977360129356384,
+        "id": 22
     },
     {
         "timestamp": "08:52.100",
         "text": " what isolines I saw meaning equal",
-        "confidence": 0.8275251388549805
+        "confidence": 0.8275251388549805,
+        "id": 23
     },
     {
         "timestamp": "08:59.800",
         "text": " isolines of pressure",
-        "confidence": 0.9615775346755981
+        "confidence": 0.9615775346755981,
+        "id": 24
     },
     {
         "timestamp": "09:06.200",
         "text": " or Mach number",
-        "confidence": 0.8731285333633423
+        "confidence": 0.8731285333633423,
+        "id": 25
     },
     {
         "timestamp": "09:10.800",
         "text": " and many other examples so there are still",
-        "confidence": 0.8988726139068604
+        "confidence": 0.8988726139068604,
+        "id": 26
     },
     {
         "timestamp": "09:20.500",
         "text": " other ways to represent functions graphically so we can plot a family of curves Z the dependent variable against one of the Independent variables with the other fixed and so then we get",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 27
     },
     {
         "timestamp": "09:42.300",
         "text": " set of curves like this for example",
-        "confidence": 0.9662730693817139
+        "confidence": 0.9662730693817139,
+        "id": 28
     },
     {
         "timestamp": "09:45.900",
         "text": " and this would be with why he would why one",
-        "confidence": 0.8837677240371704
+        "confidence": 0.8837677240371704,
+        "id": 29
     },
     {
         "timestamp": "09:52.700",
         "text": " why he would why two and so on",
-        "confidence": 0.7368211150169373
+        "confidence": 0.7368211150169373,
+        "id": 30
     },
     {
         "timestamp": "10:00.400",
         "text": " and again this is very frequently used so he has an electrical example a field-effect transistor so we've got the drain current as a function of drain source voltage and gate source voltage so we have a family of terms we have a family of curves here and we're approaching the dependent variable against one of the Independent variables and the curves are parameterized in the other independent variable",
-        "confidence": 0.9553314447402954
+        "confidence": 0.9553314447402954,
+        "id": 31
     },
     {
         "timestamp": "10:51.200",
         "text": " thermal again this is done a lot",
-        "confidence": 0.9512631297111511
+        "confidence": 0.9512631297111511,
+        "id": 32
     },
     {
         "timestamp": "10:57.600",
         "text": " temperature versus here we have entropy and specific volume sub temperature is plotted against entropy and then the curves are parameterized here in the specific volume and that's another one again from thermal am fixing parameterizing the curves in one of the Independent variables here pressure so e.g. so we had the field effect transistor and we had a couple of examples there from thermal",
-        "confidence": 0.9427986145019531
+        "confidence": 0.9427986145019531,
+        "id": 33
     },
     {
         "timestamp": "11:45.300",
         "text": " Ham",
-        "confidence": 0.7766555547714233
+        "confidence": 0.7766555547714233,
+        "id": 34
     },
     {
         "timestamp": "11:50.300",
         "text": " ok so that's a few ways to represent functions of two variables we go to the three variable case",
-        "confidence": 0.9403843879699707
+        "confidence": 0.9403843879699707,
+        "id": 35
     },
     {
         "timestamp": "11:59.000",
         "text": " so w is a function of x y and z well things become more difficult with graphical representation the very first one we had we don't have enough dimensions to draw that but with the second and third possibilities we could use a sequence of such pictures",
-        "confidence": 0.9408535957336426
+        "confidence": 0.9408535957336426,
+        "id": 36
     },
     {
         "timestamp": "12:31.000",
         "text": " I'm in fact you know the first time you can also use the sequence there so here's an example of this is an old style weather weather map",
-        "confidence": 0.9433685541152954
+        "confidence": 0.9433685541152954,
+        "id": 37
     },
     {
         "timestamp": "12:42.800",
         "text": " so we've got pressure as a function of X and Y but also It's Time varying so that brings in the third variable T so what we've done here to fix time is a contour map so these are isolines isobars isolines a pressure and we just have a sequence this is the same picture 20 days later so that's a function there are three variables with a graphical representation",
-        "confidence": 0.9458624720573425
+        "confidence": 0.9458624720573425,
+        "id": 38
     },
     {
         "timestamp": "13:14.800",
         "text": " of course it gets the more independent variables you have the more difficult it becomes to package information graphically there is more information there and we can still use the mathematics though the differentiation partial differentiation expanding and series The Taylor series maxima and minima all of the things will learn about in the two-dimensional case will go over into high dementia not going to cover that in this course but it does generalise",
-        "confidence": 0.9324449896812439
+        "confidence": 0.9324449896812439,
+        "id": 39
     },
     {
         "timestamp": "13:53.500",
         "text": " an",
-        "confidence": 0.6157195568084717
+        "confidence": 0.6157195568084717,
+        "id": 40
     },
     {
         "timestamp": "13:55.300",
         "text": " there are many programs to do a graphical representations let me just mention one that's used a lot in the Triforce for many different applications MATLAB with MATLAB you can use you can draw and graphical representations of functions of two variables in the various forms that we have described so the double arrow here that's the MATLAB prompt and so you can",
-        "confidence": 0.9596821665763855
+        "confidence": 0.9596821665763855,
+        "id": 41
     },
     {
         "timestamp": "14:35.900",
         "text": " launch MATLAB from the machines in the DPL and this is just this function Peaks is just a demo to illustrate graphing",
-        "confidence": 0.9185803532600403
+        "confidence": 0.9185803532600403,
+        "id": 42
     },
     {
         "timestamp": "14:54.600",
         "text": " I'm typing help Pete's will describe how to use that with type this command Z is Pete save 2525 is specifying how fine the mesh is for the function and the command mess of Z it gives us a plot very much of the time we showed on the first page",
-        "confidence": 0.944970965385437
+        "confidence": 0.944970965385437,
+        "id": 43
     },
     {
         "timestamp": "15:29.400",
         "text": " in fighting this is the output with this command surf surf actually fills in the mesh in a with colours and tries to give a better visual impression of the peaks and troughs and so on so that's the second command surf",
-        "confidence": 0.9497461318969727
+        "confidence": 0.9497461318969727,
+        "id": 44
     },
     {
         "timestamp": "15:53.200",
         "text": " contour you can also do that so the bottom come and contour producers that Sam contour map",
-        "confidence": 0.8997464776039124
+        "confidence": 0.8997464776039124,
+        "id": 45
     },
     {
         "timestamp": "16:06.000",
         "text": " and I'm fairly also you can do other at this type of diagram as well I'm in in in a straightforward way",
-        "confidence": 0.8871060013771057
+        "confidence": 0.8871060013771057,
+        "id": 46
     },
     {
         "timestamp": "16:28.200",
         "text": " the top of the next page let me just",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 47
     },
     {
         "timestamp": "16:36.200",
         "text": " if you an example of how to block your own function in MATLAB",
-        "confidence": 0.9351224899291992
+        "confidence": 0.9351224899291992,
+        "id": 48
     },
     {
         "timestamp": "16:44.000",
         "text": " so this",
-        "confidence": 0.9694008827209473
+        "confidence": 0.9694008827209473,
+        "id": 49
     },
     {
         "timestamp": "16:50.400",
         "text": " example is Z = XY",
-        "confidence": 0.9142027497291565
+        "confidence": 0.9142027497291565,
+        "id": 50
     },
     {
         "timestamp": "16:58.100",
         "text": " 1 - x 2 - y",
-        "confidence": 0.8307204246520996
+        "confidence": 0.8307204246520996,
+        "id": 51
     },
     {
         "timestamp": "17:05.800",
         "text": " and it's these two lines of code which produced that the first 1 sets up the mess of x values and Y values defined on a on a rectangular grid",
-        "confidence": 0.9403589963912964
+        "confidence": 0.9403589963912964,
+        "id": 52
     },
     {
         "timestamp": "17:24.200",
         "text": " in01 for Wrexham 0124 why the second time defined function z Now MATLAB is basically built around matrix multiplication but four functions of this time you need to do element by element multiplication to define the function and that that that that are not start the regular star is just x as a matrix multiplication so that's how you need to find function Z here and then once you've got the Z values that's the result of the command",
-        "confidence": 0.9458516836166382
+        "confidence": 0.9458516836166382,
+        "id": 53
     },
     {
         "timestamp": "18:12.000",
         "text": " Sofia this one's of the size of x you have to produce a set of one's over the entire grid to match this one here and then the two there as well",
-        "confidence": 0.9411352276802063
+        "confidence": 0.9411352276802063,
+        "id": 54
     },
     {
         "timestamp": "18:26.900",
         "text": " ok",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 55
     },
     {
         "timestamp": "18:30.100",
         "text": " so",
-        "confidence": 0.8725830316543579
+        "confidence": 0.8725830316543579,
+        "id": 56
     },
     {
         "timestamp": "18:33.000",
         "text": " one more small section here are the preliminary type on parametric representations so quite often we running to descriptions of surfaces of the following type so are is the position vector and it's going to be a function of two parameters u and v",
-        "confidence": 0.9357163310050964
+        "confidence": 0.9357163310050964,
+        "id": 57
     },
     {
         "timestamp": "19:01.700",
         "text": " and so writing out what that means more fully we have the X coordinate x with u v and then I the first unicorn vector and then + y review and VJ + z",
-        "confidence": 0.8665527105331421
+        "confidence": 0.8665527105331421,
+        "id": 58
     },
     {
         "timestamp": "19:26.400",
         "text": " have you and v e x",
-        "confidence": 0.8041297197341919
+        "confidence": 0.8041297197341919,
+        "id": 59
     },
     {
         "timestamp": "19:29.700",
         "text": " k",
-        "confidence": 0.7654579281806946
+        "confidence": 0.7654579281806946,
+        "id": 60
     },
     {
         "timestamp": "19:31.600",
         "text": " so the X Y and Z coordinates vary as a function of two independent parameters here you and be so these you and be allowed to vary freely",
-        "confidence": 0.9207570552825928
+        "confidence": 0.9207570552825928,
+        "id": 61
     },
     {
         "timestamp": "19:48.200",
         "text": " so I'm Wiccan",
-        "confidence": 0.8173909187316895
+        "confidence": 0.8173909187316895,
+        "id": 62
     },
     {
         "timestamp": "19:52.600",
         "text": " sketch or visualiser surface describe in this way by setting alternately you to be constants various constant values and then very v and vice-versa",
-        "confidence": 0.8969053626060486
+        "confidence": 0.8969053626060486,
+        "id": 63
     },
     {
         "timestamp": "20:10.300",
         "text": " and",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 64
     },
     {
         "timestamp": "20:13.000",
         "text": " following a procedure give us a mass to describe a surface again in three dimensions",
-        "confidence": 0.8642597198486328
+        "confidence": 0.8642597198486328,
+        "id": 65
     },
     {
         "timestamp": "20:20.800",
         "text": " so here we are defining the three parameters x y and z are equally in terms of u and v",
-        "confidence": 0.9209036827087402
+        "confidence": 0.9209036827087402,
+        "id": 66
     },
     {
         "timestamp": "20:32.100",
         "text": " so let's take a an example here to argue he is given by this expression with the causes and signs of you and end of E term the B parameter multiplies the k so let's take a sketch of that surface",
-        "confidence": 0.8754003643989563
+        "confidence": 0.8754003643989563,
+        "id": 67
     },
     {
         "timestamp": "20:56.600",
         "text": " first of all let's take you to be a constant that still 80 then we have 40 + 0 + v x k so I can't hear that so that's 2 and 4 then",
-        "confidence": 0.9012092351913452
+        "confidence": 0.9012092351913452,
+        "id": 68
     },
     {
         "timestamp": "21:23.500",
         "text": " when new is 0 and we varies we have 4 I + any multiples of k so we going to have a straight line here",
-        "confidence": 0.8939456343650818
+        "confidence": 0.8939456343650818,
+        "id": 69
     },
     {
         "timestamp": "21:34.100",
         "text": " vertically through the point four I",
-        "confidence": 0.7922502160072327
+        "confidence": 0.7922502160072327,
+        "id": 70
     },
     {
         "timestamp": "21:42.900",
         "text": " no so that's the line",
-        "confidence": 0.9051838517189026
+        "confidence": 0.9051838517189026,
+        "id": 71
     },
     {
         "timestamp": "21:47.300",
         "text": " you equals 0",
-        "confidence": 0.8074201345443726
+        "confidence": 0.8074201345443726,
+        "id": 72
     },
     {
         "timestamp": "21:51.000",
         "text": " let's now take me to be constantly set V20 and very you then we have the course you terminate sign you turn them the both x 2 so I think you can see this is going to be a circle in the XY plane and the sofa is going to be centred at 2 so um let me Draw then",
-        "confidence": 0.9323673844337463
+        "confidence": 0.9323673844337463,
+        "id": 73
     },
     {
         "timestamp": "22:23.900",
         "text": " circle like this and",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 74
     },
     {
         "timestamp": "22:27.500",
         "text": " you work out which direction that goes it follows this arrow here as new increases and this is the v is 0 and then 4 different",
-        "confidence": 0.9257116317749023
+        "confidence": 0.9257116317749023,
+        "id": 75
     },
     {
         "timestamp": "22:50.900",
         "text": " values of V",
-        "confidence": 0.873710036277771
+        "confidence": 0.873710036277771,
+        "id": 76
     },
     {
         "timestamp": "22:53.000",
         "text": " we can again see that we get circles like this",
-        "confidence": 0.9490594267845154
+        "confidence": 0.9490594267845154,
+        "id": 77
     },
     {
         "timestamp": "23:02.900",
         "text": " and as the picture develops then we can see that we're what we have here",
-        "confidence": 0.9111809134483337
+        "confidence": 0.9111809134483337,
+        "id": 78
     },
     {
         "timestamp": "23:17.500",
         "text": " is a parametric representation of a cylinder",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 79
     },
     {
         "timestamp": "23:51.100",
         "text": " ok",
-        "confidence": 0.8973118662834167
+        "confidence": 0.8973118662834167,
+        "id": 80
     },
     {
         "timestamp": "23:59.500",
         "text": " ok so let's start now on the path of differentiation the first bit of this again we'll be a week out from the Michaelmas term so let's go right back to a single variable case why it was FFX so we say that f",
-        "confidence": 0.9406223893165588
+        "confidence": 0.9406223893165588,
+        "id": 81
     },
     {
         "timestamp": "24:27.800",
         "text": " is differentiable",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 82
     },
     {
         "timestamp": "24:37.000",
         "text": " at x people 2 x 1/8",
-        "confidence": 0.7476601600646973
+        "confidence": 0.7476601600646973,
+        "id": 83
     },
     {
         "timestamp": "24:45.900",
         "text": " the limit",
-        "confidence": 0.8559398055076599
+        "confidence": 0.8559398055076599,
+        "id": 84
     },
     {
         "timestamp": "24:49.300",
         "text": " as Celtics",
-        "confidence": 0.6564391255378723
+        "confidence": 0.6564391255378723,
+        "id": 85
     },
     {
         "timestamp": "24:53.400",
         "text": " tennis the 0 of f",
-        "confidence": 0.8013706803321838
+        "confidence": 0.8013706803321838,
+        "id": 86
     },
     {
         "timestamp": "24:59.000",
         "text": " x 1 + delta x -4 x 1",
-        "confidence": 0.8154031038284302
+        "confidence": 0.8154031038284302,
+        "id": 87
     },
     {
         "timestamp": "25:09.000",
         "text": " divided by Delta x",
-        "confidence": 0.687495231628418
+        "confidence": 0.687495231628418,
+        "id": 88
     },
     {
         "timestamp": "25:17.000",
         "text": " if that limit exists",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 89
     },
     {
         "timestamp": "25:20.500",
         "text": " so that's the ordinary way",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 90
     },
     {
         "timestamp": "25:24.100",
         "text": " defining derivative in in calculus and of course we have the two common notations Yes Prime",
-        "confidence": 0.938300609588623
+        "confidence": 0.938300609588623,
+        "id": 91
     },
     {
         "timestamp": "25:35.100",
         "text": " have X1 or",
-        "confidence": 0.536574125289917
+        "confidence": 0.536574125289917,
+        "id": 92
     },
     {
         "timestamp": "25:40.200",
         "text": " DF",
-        "confidence": 0.8467584848403931
+        "confidence": 0.8467584848403931,
+        "id": 93
     },
     {
         "timestamp": "25:42.900",
         "text": " by The xx",
-        "confidence": 0.7055153846740723
+        "confidence": 0.7055153846740723,
+        "id": 94
     },
     {
         "timestamp": "25:45.600",
         "text": " of X1 and",
-        "confidence": 0.727299690246582
+        "confidence": 0.727299690246582,
+        "id": 95
     },
     {
         "timestamp": "25:55.700",
         "text": " just a note",
-        "confidence": 0.9128057956695557
+        "confidence": 0.9128057956695557,
+        "id": 96
     },
     {
         "timestamp": "26:04.000",
         "text": " that of course functions can fail",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 97
     },
     {
         "timestamp": "26:09.500",
         "text": " to have derivatives",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 98
     },
     {
         "timestamp": "26:12.900",
         "text": " at some points",
-        "confidence": 0.8583914041519165
+        "confidence": 0.8583914041519165,
+        "id": 99
     },
     {
         "timestamp": "26:20.900",
         "text": " and",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 100
     },
     {
         "timestamp": "26:32.200",
         "text": " so if we have something like this discontinuity so apps depending on what the value is at this point of discontinuity that this limit doesn't",
-        "confidence": 0.9296505451202393
+        "confidence": 0.9296505451202393,
+        "id": 101
     },
     {
         "timestamp": "26:49.900",
         "text": " or it has from One Direction it will not exist it will blow up",
-        "confidence": 0.9355850219726562
+        "confidence": 0.9355850219726562,
+        "id": 102
     },
     {
         "timestamp": "26:56.800",
         "text": " and even if you have something like this",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 103
     },
     {
         "timestamp": "27:04.300",
         "text": " the slope at this point is discontinuous and technically speaking the derivative at that point doesn't exist because as dealt x tends to zero from the left and from the right you get different values",
-        "confidence": 0.9344580173492432
+        "confidence": 0.9344580173492432,
+        "id": 104
     },
     {
         "timestamp": "27:20.100",
         "text": " so I'm part of ordinary calculus is that the limit has the same value as dealt dealt x 10 stazio from either Direction",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 105
     },
     {
         "timestamp": "27:31.000",
         "text": " ok so that's the really basic case from ordinary calculus",
-        "confidence": 0.9668634533882141
+        "confidence": 0.9668634533882141,
+        "id": 106
     },
     {
         "timestamp": "27:45.400",
         "text": " so a function of two variables so",
-        "confidence": 0.9132910966873169
+        "confidence": 0.9132910966873169,
+        "id": 107
     },
     {
         "timestamp": "27:54.400",
         "text": " so if we fix y equal why one",
-        "confidence": 0.8646634221076965
+        "confidence": 0.8646634221076965,
+        "id": 108
     },
     {
         "timestamp": "28:02.600",
         "text": " so I've got Z = f of X and Y gonna fix one of the independent variable and if f off",
-        "confidence": 0.8525476455688477
+        "confidence": 0.8525476455688477,
+        "id": 109
     },
     {
         "timestamp": "28:11.500",
         "text": " x y 1",
-        "confidence": 0.5662274360656738
+        "confidence": 0.5662274360656738,
+        "id": 110
     },
     {
         "timestamp": "28:15.500",
         "text": " is differentiable",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 111
     },
     {
         "timestamp": "28:23.000",
         "text": " as a function of x",
-        "confidence": 0.9698935151100159
+        "confidence": 0.9698935151100159,
+        "id": 112
     },
     {
         "timestamp": "28:34.100",
         "text": " then",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 113
     },
     {
         "timestamp": "28:39.800",
         "text": " we get the partial derivative",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 114
     },
     {
         "timestamp": "28:51.200",
         "text": " with respect to x",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 115
     },
     {
         "timestamp": "29:01.200",
         "text": " so am I going to leave a little space here to the left but I'm going to add something in a second so the notation is this an delta symbol the partial delta to a partial DS by The XX and this is the limit has",
-        "confidence": 0.912537693977356
+        "confidence": 0.912537693977356,
+        "id": 116
     },
     {
         "timestamp": "29:27.400",
         "text": " belt extender 0 of f",
-        "confidence": 0.7729926109313965
+        "confidence": 0.7729926109313965,
+        "id": 117
     },
     {
         "timestamp": "29:33.300",
         "text": " 10 x 1",
-        "confidence": 0.9305288791656494
+        "confidence": 0.9305288791656494,
+        "id": 118
     },
     {
         "timestamp": "29:36.300",
         "text": " plus",
-        "confidence": 0.6792982816696167
+        "confidence": 0.6792982816696167,
+        "id": 119
     },
     {
         "timestamp": "29:38.800",
         "text": " deltex",
-        "confidence": 0.8363709449768066
+        "confidence": 0.8363709449768066,
+        "id": 120
     },
     {
         "timestamp": "29:41.600",
         "text": " comma y1 - f",
-        "confidence": 0.6768535375595093
+        "confidence": 0.6768535375595093,
+        "id": 121
     },
     {
         "timestamp": "29:49.200",
         "text": " 5 x 1 y 1",
-        "confidence": 0.5832467079162598
+        "confidence": 0.5832467079162598,
+        "id": 122
     },
     {
         "timestamp": "29:57.200",
         "text": " divided by",
-        "confidence": 0.821620762348175
+        "confidence": 0.821620762348175,
+        "id": 123
     },
     {
         "timestamp": "29:59.300",
         "text": " deltex",
-        "confidence": 0.6384324431419373
+        "confidence": 0.6384324431419373,
+        "id": 124
     },
     {
         "timestamp": "30:03.100",
         "text": " so that's how",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 125
     },
     {
         "timestamp": "30:08.400",
         "text": " would you find the partial derivative on this side",
-        "confidence": 0.8756605386734009
+        "confidence": 0.8756605386734009,
+        "id": 126
     },
     {
         "timestamp": "30:15.300",
         "text": " let me just write it again here partial dfid x",
-        "confidence": 0.8537931442260742
+        "confidence": 0.8537931442260742,
+        "id": 127
     },
     {
         "timestamp": "30:24.200",
         "text": " brackets X1 y1 and that's",
-        "confidence": 0.8813979029655457
+        "confidence": 0.8813979029655457,
+        "id": 128
     },
     {
         "timestamp": "30:32.400",
         "text": " I just put that in",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 129
     },
     {
         "timestamp": "30:36.300",
         "text": " to emphasize",
-        "confidence": 0.8422983288764954
+        "confidence": 0.8422983288764954,
+        "id": 130
     },
     {
         "timestamp": "30:42.000",
         "text": " where",
-        "confidence": 0.8319337964057922
+        "confidence": 0.8319337964057922,
+        "id": 131
     },
     {
         "timestamp": "30:45.600",
         "text": " it is evaluated",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 132
     },
     {
         "timestamp": "30:53.100",
         "text": " sometimes we put this in other times it looks too cluttered to carry this around we're just you work with partial Yet by The XX depending on on the situation",
-        "confidence": 0.9062948822975159
+        "confidence": 0.9062948822975159,
+        "id": 133
     },
     {
         "timestamp": "31:10.400",
         "text": " partial derivative spectra why is define similarly",
-        "confidence": 0.8563039302825928
+        "confidence": 0.8563039302825928,
+        "id": 134
     },
     {
         "timestamp": "31:16.200",
         "text": " another piece of notation",
-        "confidence": 0.9672510027885437
+        "confidence": 0.9672510027885437,
+        "id": 135
     },
     {
         "timestamp": "31:20.600",
         "text": " partial dfid x and then in a large round bracket and a subscript why here so sometimes we use that notation for the partial derivative with respect eggs keeping why fixed so there's little why here outside emphasizes the variable that kept fixed and against in some circumstances it's useful to to be really clear about that",
-        "confidence": 0.9585588574409485
+        "confidence": 0.9585588574409485,
+        "id": 136
     },
     {
         "timestamp": "31:55.400",
         "text": " a little word of warning here on notation some of the books and Christ's example use this notice and partial dfid x vertical line and then a subscript of X1 y1 to use to do they know where the derivative is evaluated so that equivalent to what I've written here and I'm not going to use that notation whenever we have the subscript outside that's telling us what's going to be kept fixed ok",
-        "confidence": 0.9300559759140015
+        "confidence": 0.9300559759140015,
+        "id": 137
     },
     {
         "timestamp": "32:49.500",
         "text": " so I'm just looking at this graphic those partial derivatives graphically and let's take this picture here",
-        "confidence": 0.9443337321281433
+        "confidence": 0.9443337321281433,
+        "id": 138
     },
     {
         "timestamp": "33:11.200",
         "text": " X1 y1",
-        "confidence": 0.940579891204834
+        "confidence": 0.940579891204834,
+        "id": 139
     },
     {
         "timestamp": "33:16.000",
         "text": " is this point here and I'm going to take",
-        "confidence": 0.8544561266899109
+        "confidence": 0.8544561266899109,
+        "id": 140
     },
     {
         "timestamp": "33:26.000",
         "text": " two lines in the surface",
-        "confidence": 0.8587945103645325
+        "confidence": 0.8587945103645325,
+        "id": 141
     },
     {
         "timestamp": "33:30.700",
         "text": " I'm lying above the X is constantin Weisz constant lines and let me draw in the tangents",
-        "confidence": 0.7746533751487732
+        "confidence": 0.7746533751487732,
+        "id": 142
     },
     {
         "timestamp": "33:46.500",
         "text": " at this point",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 143
     },
     {
         "timestamp": "33:55.000",
         "text": " and so",
-        "confidence": 0.9490081667900085
+        "confidence": 0.9490081667900085,
+        "id": 144
     },
     {
         "timestamp": "34:03.100",
         "text": " this tangent",
-        "confidence": 0.9203891754150391
+        "confidence": 0.9203891754150391,
+        "id": 145
     },
     {
         "timestamp": "34:08.700",
         "text": " the slope",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 146
     },
     {
         "timestamp": "34:12.600",
         "text": " this is parcel",
-        "confidence": 0.8970092535018921
+        "confidence": 0.8970092535018921,
+        "id": 147
     },
     {
         "timestamp": "34:18.000",
         "text": " dfid x at x 1",
-        "confidence": 0.8822522163391113
+        "confidence": 0.8822522163391113,
+        "id": 148
     },
     {
         "timestamp": "34:26.400",
         "text": " white one",
-        "confidence": 0.7793996930122375
+        "confidence": 0.7793996930122375,
+        "id": 149
     },
     {
         "timestamp": "34:29.800",
         "text": " so we're keeping wife fixed and taking the derivative partial derivative with respect to x and we end up with this slow and the other one of course",
-        "confidence": 0.9228430390357971
+        "confidence": 0.9228430390357971,
+        "id": 150
     },
     {
         "timestamp": "34:51.700",
         "text": " the slope is partial Yet by d.y",
-        "confidence": 0.8490623831748962
+        "confidence": 0.8490623831748962,
+        "id": 151
     },
     {
         "timestamp": "35:03.100",
         "text": " OX1",
-        "confidence": 0.7676381468772888
+        "confidence": 0.7676381468772888,
+        "id": 152
     },
     {
         "timestamp": "35:05.500",
         "text": " y1",
-        "confidence": 0.6252152323722839
+        "confidence": 0.6252152323722839,
+        "id": 153
     },
     {
         "timestamp": "35:10.400",
         "text": " so that's the graphical meaning of those partial derivatives",
-        "confidence": 0.9508610963821411
+        "confidence": 0.9508610963821411,
+        "id": 154
     },
     {
         "timestamp": "35:19.900",
         "text": " ok",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 155
     },
     {
         "timestamp": "35:26.900",
         "text": " so clearly we can extend this idea to any number of independent variables",
-        "confidence": 0.9369866251945496
+        "confidence": 0.9369866251945496,
+        "id": 156
     },
     {
         "timestamp": "35:37.000",
         "text": " but also we have the possibility of Higher order derivatives taking a derivative a second time so let's take our two variable cases Z is a function of X and Y",
-        "confidence": 0.9181752800941467
+        "confidence": 0.9181752800941467,
+        "id": 157
     },
     {
         "timestamp": "35:53.900",
         "text": " the functions part of the FBI DX parcel DX by d.y",
-        "confidence": 0.7457220554351807
+        "confidence": 0.7457220554351807,
+        "id": 158
     },
     {
         "timestamp": "35:59.100",
         "text": " those are a game functions of two variables that both functions of X and Y so as we move his point around the slopes are going to Bury",
-        "confidence": 0.8904069662094116
+        "confidence": 0.8904069662094116,
+        "id": 159
     },
     {
         "timestamp": "36:09.800",
         "text": " so we can look at how those change by taking a derivative so",
-        "confidence": 0.9367197751998901
+        "confidence": 0.9367197751998901,
+        "id": 160
     },
     {
         "timestamp": "36:18.200",
         "text": " if",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 161
     },
     {
         "timestamp": "36:20.800",
         "text": " we differentiate",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 162
     },
     {
         "timestamp": "36:27.300",
         "text": " we differentiate again",
-        "confidence": 0.9664005041122437
+        "confidence": 0.9664005041122437,
+        "id": 163
     },
     {
         "timestamp": "36:33.800",
         "text": " we have four possibilities",
-        "confidence": 0.9345654249191284
+        "confidence": 0.9345654249191284,
+        "id": 164
     },
     {
         "timestamp": "36:44.800",
         "text": " we have",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 165
     },
     {
         "timestamp": "36:48.000",
         "text": " we can take you by The XX partially by The xx",
-        "confidence": 0.8860032558441162
+        "confidence": 0.8860032558441162,
+        "id": 166
     },
     {
         "timestamp": "36:54.100",
         "text": " partial d f by The xx",
-        "confidence": 0.8344255685806274
+        "confidence": 0.8344255685806274,
+        "id": 167
     },
     {
         "timestamp": "36:59.000",
         "text": " we can take parcel",
-        "confidence": 0.8897128105163574
+        "confidence": 0.8897128105163574,
+        "id": 168
     },
     {
         "timestamp": "37:02.700",
         "text": " d by DX of",
-        "confidence": 0.7923439741134644
+        "confidence": 0.7923439741134644,
+        "id": 169
     },
     {
         "timestamp": "37:08.600",
         "text": " Asher d f by d y",
-        "confidence": 0.3227219879627228
+        "confidence": 0.3227219879627228,
+        "id": 170
     },
     {
         "timestamp": "37:13.800",
         "text": " we can take partial d by the way of",
-        "confidence": 0.7465723752975464
+        "confidence": 0.7465723752975464,
+        "id": 171
     },
     {
         "timestamp": "37:24.000",
         "text": " partial dfid x",
-        "confidence": 0.6600829362869263
+        "confidence": 0.6600829362869263,
+        "id": 172
     },
     {
         "timestamp": "37:27.400",
         "text": " and then finally",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 173
     },
     {
         "timestamp": "37:29.800",
         "text": " we can take partial divided why",
-        "confidence": 0.8553385734558105
+        "confidence": 0.8553385734558105,
+        "id": 174
     },
     {
         "timestamp": "37:33.200",
         "text": " of",
-        "confidence": 0.7916443347930908
+        "confidence": 0.7916443347930908,
+        "id": 175
     },
     {
         "timestamp": "37:37.900",
         "text": " parcel DX by d.y",
-        "confidence": 0.5806574821472168
+        "confidence": 0.5806574821472168,
+        "id": 176
     },
     {
         "timestamp": "37:44.400",
         "text": " so those are the four derivatives different derivatives we could take and",
-        "confidence": 0.8243401050567627
+        "confidence": 0.8243401050567627,
+        "id": 177
     },
     {
         "timestamp": "37:54.800",
         "text": " the notation",
-        "confidence": 0.7717971801757812
+        "confidence": 0.7717971801757812,
+        "id": 178
     },
     {
         "timestamp": "37:59.300",
         "text": " these",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 179
     },
     {
         "timestamp": "38:02.800",
         "text": " and this one is partial t2f by the X word",
-        "confidence": 0.7837113738059998
+        "confidence": 0.7837113738059998,
+        "id": 180
     },
     {
         "timestamp": "38:10.000",
         "text": " the next one",
-        "confidence": 0.9546757936477661
+        "confidence": 0.9546757936477661,
+        "id": 181
     },
     {
         "timestamp": "38:14.000",
         "text": " parcel d2f",
-        "confidence": 0.6077613830566406
+        "confidence": 0.6077613830566406,
+        "id": 182
     },
     {
         "timestamp": "38:16.500",
         "text": " so we keep the order in the denominator matching",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 183
     },
     {
         "timestamp": "38:23.000",
         "text": " the order on the previous line so that special d2f by the x t y",
-        "confidence": 0.8440473079681396
+        "confidence": 0.8440473079681396,
+        "id": 184
     },
     {
         "timestamp": "38:29.600",
         "text": " this one is d to f",
-        "confidence": 0.7667073607444763
+        "confidence": 0.7667073607444763,
+        "id": 185
     },
     {
         "timestamp": "38:33.100",
         "text": " by",
-        "confidence": 0.544115424156189
+        "confidence": 0.544115424156189,
+        "id": 186
     },
     {
         "timestamp": "38:35.700",
         "text": " DY DX and finally d2f bye",
-        "confidence": 0.8934713006019592
+        "confidence": 0.8934713006019592,
+        "id": 187
     },
     {
         "timestamp": "38:43.300",
         "text": " basil d2fit Y squared",
-        "confidence": 0.7269570231437683
+        "confidence": 0.7269570231437683,
+        "id": 188
     },
     {
         "timestamp": "39:01.800",
         "text": " ok so",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 189
     },
     {
         "timestamp": "39:07.100",
         "text": " let's take an example so we brought Z equals X squared sign 3ye we have",
-        "confidence": 0.9223588705062866
+        "confidence": 0.9223588705062866,
+        "id": 190
     },
     {
         "timestamp": "39:24.500",
         "text": " parcel be said by The XX this = 2x sign 3y",
-        "confidence": 0.8591441512107849
+        "confidence": 0.8591441512107849,
+        "id": 191
     },
     {
         "timestamp": "39:37.300",
         "text": " partial",
-        "confidence": 0.8977615833282471
+        "confidence": 0.8977615833282471,
+        "id": 192
     },
     {
         "timestamp": "39:39.300",
         "text": " deserve by DY",
-        "confidence": 0.6278159618377686
+        "confidence": 0.6278159618377686,
+        "id": 193
     },
     {
         "timestamp": "39:42.200",
         "text": " that's 3 x squared",
-        "confidence": 0.9141589999198914
+        "confidence": 0.9141589999198914,
+        "id": 194
     },
     {
         "timestamp": "39:45.800",
         "text": " cars",
-        "confidence": 0.776462197303772
+        "confidence": 0.776462197303772,
+        "id": 195
     },
     {
         "timestamp": "39:48.000",
         "text": " 3y",
-        "confidence": 0.7805296778678894
+        "confidence": 0.7805296778678894,
+        "id": 196
     },
     {
         "timestamp": "39:51.700",
         "text": " parcel d to Z by the X squared",
-        "confidence": 0.8670798540115356
+        "confidence": 0.8670798540115356,
+        "id": 197
     },
     {
         "timestamp": "39:57.300",
         "text": " that's 2",
-        "confidence": 0.8064851760864258
+        "confidence": 0.8064851760864258,
+        "id": 198
     },
     {
         "timestamp": "39:59.900",
         "text": " sign 3y and",
-        "confidence": 0.9252372980117798
+        "confidence": 0.9252372980117798,
+        "id": 199
     },
     {
         "timestamp": "40:07.700",
         "text": " t2z",
-        "confidence": 0.7792158126831055
+        "confidence": 0.7792158126831055,
+        "id": 200
     },
     {
         "timestamp": "40:10.500",
         "text": " i d y squared that's -9 x squared sign",
-        "confidence": 0.9111918807029724
+        "confidence": 0.9111918807029724,
+        "id": 201
     },
     {
         "timestamp": "40:19.000",
         "text": " 3y",
-        "confidence": 0.7813336849212646
+        "confidence": 0.7813336849212646,
+        "id": 202
     },
     {
         "timestamp": "40:25.100",
         "text": " let's look at the mixed partial derivatives so differentiating this top 1 with respect to y now so that gives us deep to Z by DY DX is 6 x Cause 3 y and differentiating this top 1 with respect to x we get d2z pie",
-        "confidence": 0.9227638840675354
+        "confidence": 0.9227638840675354,
+        "id": 203
     },
     {
         "timestamp": "40:53.400",
         "text": " DX",
-        "confidence": 0.8421972393989563
+        "confidence": 0.8421972393989563,
+        "id": 204
     },
     {
         "timestamp": "40:55.200",
         "text": " Dubai",
-        "confidence": 0.6501056551933289
+        "confidence": 0.6501056551933289,
+        "id": 205
     },
     {
         "timestamp": "40:57.200",
         "text": " and that's 6 eggs",
-        "confidence": 0.884209930896759
+        "confidence": 0.884209930896759,
+        "id": 206
     },
     {
         "timestamp": "41:02.200",
         "text": " cars",
-        "confidence": 0.6415333151817322
+        "confidence": 0.6415333151817322,
+        "id": 207
     },
     {
         "timestamp": "41:05.200",
         "text": " 3y",
-        "confidence": 0.7353518605232239
+        "confidence": 0.7353518605232239,
+        "id": 208
     },
     {
         "timestamp": "41:13.000",
         "text": " for this sort of simple example it's pretty obvious that those are equal so let's just know",
-        "confidence": 0.9133449196815491
+        "confidence": 0.9133449196815491,
+        "id": 209
     },
     {
         "timestamp": "41:26.100",
         "text": " the Equality",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 210
     },
     {
         "timestamp": "41:33.400",
         "text": " on the 2nd of those mixed partial derivatives and independent of the Order of taking the derivative",
-        "confidence": 0.8658101558685303
+        "confidence": 0.8658101558685303,
+        "id": 211
     },
     {
         "timestamp": "42:00.700",
         "text": " so even for more complicated functions and badly behaved functions we end up with these mixed partial derivatives being equal under a very mild condition that as long as those derivatives of continuous functions anyone so there they're equal that's a serum that can be proved it's it's not something that we will do here or indeed in the engineering course we just take that as has given so let me just emphasize",
-        "confidence": 0.9441797137260437
+        "confidence": 0.9441797137260437,
+        "id": 212
     },
     {
         "timestamp": "42:44.100",
         "text": " this is a very mild condition",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 213
     },
     {
         "timestamp": "42:47.300",
         "text": " and that those are continuous so",
-        "confidence": 0.7060663104057312
+        "confidence": 0.7060663104057312,
+        "id": 214
     },
     {
         "timestamp": "42:58.100",
         "text": " in practice",
-        "confidence": 0.9624114036560059
+        "confidence": 0.9624114036560059,
+        "id": 215
     },
     {
         "timestamp": "43:04.200",
         "text": " we always",
-        "confidence": 0.9699060320854187
+        "confidence": 0.9699060320854187,
+        "id": 216
     },
     {
         "timestamp": "43:11.100",
         "text": " we can always assume we have a quality",
-        "confidence": 0.9242863059043884
+        "confidence": 0.9242863059043884,
+        "id": 217
     },
     {
         "timestamp": "43:18.200",
         "text": " so",
-        "confidence": 0.8947831392288208
+        "confidence": 0.8947831392288208,
+        "id": 218
     },
     {
         "timestamp": "43:22.800",
         "text": " 14 the note and eat with the extra why is the rate of change in the X Direction",
-        "confidence": 0.8696341514587402
+        "confidence": 0.8696341514587402,
+        "id": 219
     },
     {
         "timestamp": "43:32.300",
         "text": " of the slope in the Y Direction so",
-        "confidence": 0.9017868041992188
+        "confidence": 0.9017868041992188,
+        "id": 220
     },
     {
         "timestamp": "43:44.100",
         "text": " this corresponds to a local",
-        "confidence": 0.8352108597755432
+        "confidence": 0.8352108597755432,
+        "id": 221
     },
     {
         "timestamp": "43:49.500",
         "text": " twist or torsion",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 222
     },
     {
         "timestamp": "43:58.500",
         "text": " in the circus",
-        "confidence": 0.8926975727081299
+        "confidence": 0.8926975727081299,
+        "id": 223
     },
     {
         "timestamp": "44:16.000",
         "text": " so we're taking the day off by The XX and we looking at how that slope there is as we vary in the Y Direction so that gives the idea of the twist in the surface and doing that same experiment of varying the tangent in the Y Direction varies as a function of x you get the same value for that that derivative that that twisting the surface ok",
-        "confidence": 0.952848494052887
+        "confidence": 0.952848494052887,
+        "id": 224
     },
     {
         "timestamp": "45:00.000",
         "text": " so I'd like to move on now to the chain rule now the chain rule you will have seen in some forms already the chain room is about a function of a function and differentiating a function of a function but now we want to look at how that's going to work when you have several variables involved",
-        "confidence": 0.9528104066848755
+        "confidence": 0.9528104066848755,
+        "id": 225
     },
     {
         "timestamp": "45:24.300",
         "text": " so",
-        "confidence": 0.8339434862136841
+        "confidence": 0.8339434862136841,
+        "id": 226
     },
     {
         "timestamp": "45:32.900",
         "text": " consider again Z is f of X and Y so I'm going to look at Z as a function of x 1 + delta x y 1",
-        "confidence": 0.9307070374488831
+        "confidence": 0.9307070374488831,
+        "id": 227
     },
     {
         "timestamp": "45:53.500",
         "text": " and buy the ordinary Taylor series",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 228
     },
     {
         "timestamp": "45:59.700",
         "text": " this can be expressed as zx1 why 1 + delta x",
-        "confidence": 0.8771952986717224
+        "confidence": 0.8771952986717224,
+        "id": 229
     },
     {
         "timestamp": "46:10.900",
         "text": " times partial dessert by The xx",
-        "confidence": 0.8028019070625305
+        "confidence": 0.8028019070625305,
+        "id": 230
     },
     {
         "timestamp": "46:18.000",
         "text": " of X1 y1",
-        "confidence": 0.8899115324020386
+        "confidence": 0.8899115324020386,
+        "id": 231
     },
     {
         "timestamp": "46:23.000",
         "text": " and um",
-        "confidence": 0.8221068382263184
+        "confidence": 0.8221068382263184,
+        "id": 232
     },
     {
         "timestamp": "46:27.300",
         "text": " in terms of the plot here",
-        "confidence": 0.9470638036727905
+        "confidence": 0.9470638036727905,
+        "id": 233
     },
     {
         "timestamp": "46:36.800",
         "text": " I'm going to draw",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 234
     },
     {
         "timestamp": "46:39.800",
         "text": " the surface through",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 235
     },
     {
         "timestamp": "46:44.400",
         "text": " those two points lying about X1 y1",
-        "confidence": 0.8021125793457031
+        "confidence": 0.8021125793457031,
+        "id": 236
     },
     {
         "timestamp": "46:52.200",
         "text": " does this point and this point here which is x 1 + delta x, y 1",
-        "confidence": 0.8918287754058838
+        "confidence": 0.8918287754058838,
+        "id": 237
     },
     {
         "timestamp": "47:02.800",
         "text": " and what we're doing with the Taylor series is just taking the tangent here at this point and approximating the value at the neighbouring point with by extending the tangent",
-        "confidence": 0.9698346257209778
+        "confidence": 0.9698346257209778,
+        "id": 238
     },
     {
         "timestamp": "47:25.400",
         "text": " so the next thing I want to do is to consider a perturbation in y and",
-        "confidence": 0.9362702369689941
+        "confidence": 0.9362702369689941,
+        "id": 239
     },
     {
         "timestamp": "47:40.800",
         "text": " itech ZX12 deltex",
-        "confidence": 0.4854521155357361
+        "confidence": 0.4854521155357361,
+        "id": 240
     },
     {
         "timestamp": "47:45.700",
         "text": " why won't the still die",
-        "confidence": 0.7946164608001709
+        "confidence": 0.7946164608001709,
+        "id": 241
     },
     {
         "timestamp": "47:50.200",
         "text": " and that's approximately equal to z of x 1 + belt x",
-        "confidence": 0.8423030376434326
+        "confidence": 0.8423030376434326,
+        "id": 242
     },
     {
         "timestamp": "48:01.400",
         "text": " come away 1",
-        "confidence": 0.6425915956497192
+        "confidence": 0.6425915956497192,
+        "id": 243
     },
     {
         "timestamp": "48:05.500",
         "text": " plus delta y",
-        "confidence": 0.7836458683013916
+        "confidence": 0.7836458683013916,
+        "id": 244
     },
     {
         "timestamp": "48:10.600",
         "text": " x",
-        "confidence": 0.8195509910583496
+        "confidence": 0.8195509910583496,
+        "id": 245
     },
     {
         "timestamp": "48:13.200",
         "text": " partial de Z by d.y",
-        "confidence": 0.751343309879303
+        "confidence": 0.751343309879303,
+        "id": 246
     },
     {
         "timestamp": "48:16.800",
         "text": " at x 1 plus dead x",
-        "confidence": 0.7455301284790039
+        "confidence": 0.7455301284790039,
+        "id": 247
     },
     {
         "timestamp": "48:22.800",
         "text": " comma",
-        "confidence": 0.8822100162506104
+        "confidence": 0.8822100162506104,
+        "id": 248
     },
     {
         "timestamp": "48:24.800",
         "text": " y1",
-        "confidence": 0.5871049165725708
+        "confidence": 0.5871049165725708,
+        "id": 249
     },
     {
         "timestamp": "48:26.800",
         "text": " so what we doing here we're looking",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 250
     },
     {
         "timestamp": "48:33.000",
         "text": " now",
-        "confidence": 0.8842828273773193
+        "confidence": 0.8842828273773193,
+        "id": 251
     },
     {
         "timestamp": "48:38.700",
         "text": " for this point x 1 + delta x",
-        "confidence": 0.9516714811325073
+        "confidence": 0.9516714811325073,
+        "id": 252
     },
     {
         "timestamp": "48:45.900",
         "text": " y1",
-        "confidence": 0.6403113603591919
+        "confidence": 0.6403113603591919,
+        "id": 253
     },
     {
         "timestamp": "48:48.200",
         "text": " plus delta y",
-        "confidence": 0.7260448932647705
+        "confidence": 0.7260448932647705,
+        "id": 254
     },
     {
         "timestamp": "48:51.100",
         "text": " so we want to find",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 255
     },
     {
         "timestamp": "48:55.700",
         "text": " the value of the function at this point here again by taking the tangent at the point on the surface above the point x 1% x y 1",
-        "confidence": 0.9585705399513245
+        "confidence": 0.9585705399513245,
+        "id": 256
     },
     {
         "timestamp": "49:12.100",
         "text": " and this is the expression we get with the Taylor series and",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 257
     },
     {
         "timestamp": "49:25.600",
         "text": " what I want to do is 1 further approximation here and say well first term stays the same z of x 1 + delta x, y 1 and plus delta y",
-        "confidence": 0.9195415377616882
+        "confidence": 0.9195415377616882,
+        "id": 258
     },
     {
         "timestamp": "49:44.400",
         "text": " x",
-        "confidence": 0.8181990385055542
+        "confidence": 0.8181990385055542,
+        "id": 259
     },
     {
         "timestamp": "49:48.200",
         "text": " ambassador said by the way I text 111",
-        "confidence": 0.820469856262207
+        "confidence": 0.820469856262207,
+        "id": 260
     },
     {
         "timestamp": "49:57.600",
         "text": " so the only difference here is that the deltics here has disappeared and the reason why we can make that approximation is writing things out more fully if we do a Taylor series approximation of this then we end up with a second order to something like this dealt a white belt x x a second mixed partial derivatives eventually got to take limits and the second order small quantities are going to disappear to a second order quantity that is different between those two steps so that I'm going to call",
-        "confidence": 0.9312183260917664
+        "confidence": 0.9312183260917664,
+        "id": 261
     },
     {
         "timestamp": "50:45.000",
         "text": " equation to",
-        "confidence": 0.8537480235099792
+        "confidence": 0.8537480235099792,
+        "id": 262
     },
     {
         "timestamp": "50:48.600",
         "text": " and",
-        "confidence": 0.9699059724807739
+        "confidence": 0.9699059724807739,
+        "id": 263
     },
     {
         "timestamp": "50:51.500",
         "text": " will continue from that point next time",
-        "confidence": 0.9699059128761292
+        "confidence": 0.9699059128761292,
+        "id": 264
     }
 ]

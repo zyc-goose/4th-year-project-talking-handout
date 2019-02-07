@@ -1,0 +1,530 @@
+[
+    {
+        "id": 0,
+        "page": 1,
+        "coords": [
+            494,
+            221,
+            1059,
+            327
+        ],
+        "selected": false,
+        "text": "Part IA Mathematics Easter Term 2010"
+    },
+    {
+        "id": 1,
+        "page": 1,
+        "coords": [
+            297,
+            391,
+            1253,
+            433
+        ],
+        "selected": false,
+        "text": "Handout 1 Functions of Several Variables"
+    },
+    {
+        "id": 2,
+        "page": 1,
+        "coords": [
+            220,
+            489,
+            1329,
+            623
+        ],
+        "selected": false,
+        "text": "These lectures consider how calculus extends to functions of two or more variables. The main topics are: differentiation, stationary points and extrema, and Taylor series."
+    },
+    {
+        "id": 3,
+        "page": 1,
+        "coords": [
+            221,
+            684,
+            1313,
+            720
+        ],
+        "selected": false,
+        "text": "1.1 Functions of two variables: Graphical Representations"
+    },
+    {
+        "id": 4,
+        "page": 1,
+        "coords": [
+            219,
+            752,
+            804,
+            780
+        ],
+        "selected": false,
+        "text": "Consider a function of two variables:"
+    },
+    {
+        "id": 5,
+        "page": 1,
+        "coords": [
+            1028,
+            777,
+            1321,
+            843
+        ],
+        "selected": false,
+        "text": "x, y are the"
+    },
+    {
+        "id": 6,
+        "page": 1,
+        "coords": [
+            217,
+            815,
+            1331,
+            1014
+        ],
+        "selected": false,
+        "text": "Z = f(x, y) independent variables We can picture such a function as a surface in 3-dimensions. To draw it, construct some lines in the surface. E.g. Fix x = x1, x2, ... and"
+    },
+    {
+        "id": 7,
+        "page": 1,
+        "coords": [
+            216,
+            1027,
+            844,
+            1063
+        ],
+        "selected": false,
+        "text": "vary y. And then the other way round."
+    },
+    {
+        "id": 8,
+        "page": 1,
+        "coords": [
+            209,
+            1815,
+            1307,
+            1852
+        ],
+        "selected": false,
+        "text": "Another way of representing such a function is with a contour map:"
+    },
+    {
+        "id": 9,
+        "page": 2,
+        "coords": [
+            205,
+            666,
+            1314,
+            747
+        ],
+        "selected": false,
+        "text": "A third way is to plot families of curves with z against one variable and the other one fixed:"
+    },
+    {
+        "id": 10,
+        "page": 2,
+        "coords": [
+            1267,
+            1013,
+            1422,
+            1052
+        ],
+        "selected": false,
+        "text": "thermo"
+    },
+    {
+        "id": 11,
+        "page": 2,
+        "coords": [
+            189,
+            1195,
+            1310,
+            1504
+        ],
+        "selected": false,
+        "text": "For functions of 3 variables W = f(x, y, z) it is possible to use a sequence of pictures of one of the above types. It is more difficult for larger numbers of variables but we can still use the mathematics. 3D graphics can be displayed on the DPO computers using matlab. Type matlab and then the following sample commands: matlab prompt"
+    },
+    {
+        "id": 12,
+        "page": 2,
+        "coords": [
+            145,
+            1467,
+            383,
+            1537
+        ],
+        "selected": false,
+        "text": "help peaks"
+    },
+    {
+        "id": 13,
+        "page": 2,
+        "coords": [
+            200,
+            1583,
+            831,
+            1610
+        ],
+        "selected": false,
+        "text": "PEAKS A sample function of two variables."
+    },
+    {
+        "id": 14,
+        "page": 3,
+        "coords": [
+            213,
+            621,
+            1376,
+            811
+        ],
+        "selected": false,
+        "text": "It is sometimes useful to represent a surface parametrically: r(u, v) = x(u, v)i + y(u, v)j + z(u, v)k"
+    },
+    {
+        "id": 15,
+        "page": 3,
+        "coords": [
+            205,
+            897,
+            1320,
+            1028
+        ],
+        "selected": false,
+        "text": "where u, v are real parameters and i, j, k are the unit coordinate vectors. Setting u = u1, u2, ... constant and varying v (and vice versa) again gives a set of curves in the surface."
+    },
+    {
+        "id": 16,
+        "page": 3,
+        "coords": [
+            204,
+            1057,
+            1302,
+            1372
+        ],
+        "selected": false,
+        "text": "Example 1. r(u, v) = (2 + 2 cos u)i + 2 sin u j + v k parametric"
+    },
+    {
+        "id": 17,
+        "page": 3,
+        "coords": [
+            1021,
+            1381,
+            1342,
+            1531
+        ],
+        "selected": false,
+        "text": "representation of a cylinder"
+    },
+    {
+        "id": 18,
+        "page": 4,
+        "coords": [
+            218,
+            146,
+            1323,
+            271
+        ],
+        "selected": false,
+        "text": "2 PARTIAL DERIVATIVES 4 2 Partial Derivatives"
+    },
+    {
+        "id": 19,
+        "page": 4,
+        "coords": [
+            216,
+            341,
+            1155,
+            461
+        ],
+        "selected": false,
+        "text": "Consider a function of a single variable: y = f(x). We say: f is differentiable at x = x1, if"
+    },
+    {
+        "id": 20,
+        "page": 4,
+        "coords": [
+            203,
+            482,
+            1491,
+            961
+        ],
+        "selected": false,
+        "text": "lim delta x tends to 0 f of x1 plus delta x  minus f of x1 over delta x exists If it exists, the limit is denoted by: f prime of x1 or df dx of x1 Note: functions can fail to have derivatives at some points."
+    },
+    {
+        "id": 21,
+        "page": 4,
+        "coords": [
+            202,
+            984,
+            991,
+            1028
+        ],
+        "selected": false,
+        "text": "Consider a function of two variables: z = f(x, y)"
+    },
+    {
+        "id": 22,
+        "page": 4,
+        "coords": [
+            230,
+            1088,
+            1391,
+            1303
+        ],
+        "selected": false,
+        "text": "If we fix y = y1 and f(x, y1) is differentiable (as a function of x) we get the partial derivative with respect to x:"
+    },
+    {
+        "id": 23,
+        "page": 4,
+        "coords": [
+            190,
+            1512,
+            1310,
+            1583
+        ],
+        "selected": false,
+        "text": "The partial derivative with respect to y is defined similarly. Sometimes"
+    },
+    {
+        "id": 24,
+        "page": 4,
+        "coords": [
+            188,
+            1590,
+            771,
+            1708
+        ],
+        "selected": false,
+        "text": "the notation partial df dx"
+    },
+    {
+        "id": 25,
+        "page": 4,
+        "coords": [
+            183,
+            1730,
+            1309,
+            1910
+        ],
+        "selected": false,
+        "text": "is used to emphasise that the partial derivative is with respect to x keeping y fixed. Be careful of some books (e.g. Kreysig) which use partial df dx at (x1, y1) to denote partial derivative with respect to x evaluated at x = x1 and y = y1."
+    },
+    {
+        "id": 26,
+        "page": 5,
+        "coords": [
+            229,
+            126,
+            1475,
+            172
+        ],
+        "selected": false,
+        "text": "2 PARTIAL DERIVATIVES 5"
+    },
+    {
+        "id": 27,
+        "page": 5,
+        "coords": [
+            226,
+            686,
+            1410,
+            726
+        ],
+        "selected": false,
+        "text": "The idea of partial derivative extends to any number of variables."
+    },
+    {
+        "id": 28,
+        "page": 5,
+        "coords": [
+            227,
+            786,
+            1016,
+            880
+        ],
+        "selected": false,
+        "text": "2.1 Higher Order Partial Derivatives"
+    },
+    {
+        "id": 29,
+        "page": 5,
+        "coords": [
+            226,
+            866,
+            1475,
+            931
+        ],
+        "selected": false,
+        "text": "For z = f(x,y) the functions partial df by dx and partial df by dy are again functions of the"
+    },
+    {
+        "id": 30,
+        "page": 5,
+        "coords": [
+            224,
+            932,
+            1422,
+            1006
+        ],
+        "selected": false,
+        "text": "two variables x and y. If we differentiate again we"
+    },
+    {
+        "id": 31,
+        "page": 5,
+        "coords": [
+            223,
+            1336,
+            1447,
+            1529
+        ],
+        "selected": false,
+        "text": "Example 2. z = x^2 sin(3y)"
+    },
+    {
+        "id": 32,
+        "page": 5,
+        "coords": [
+            397,
+            1507,
+            1557,
+            1855
+        ],
+        "selected": false,
+        "text": "partial dz dx = 2 x sin(3y) partial dz dy = 3 x^2 cos(3y) partial d2z dx^2 = 2 sin(3y) partial d2z dy^2 = - 9 x^2 sin(3y)"
+    },
+    {
+        "id": 33,
+        "page": 5,
+        "coords": [
+            382,
+            1932,
+            1563,
+            2126
+        ],
+        "selected": false,
+        "text": "partial d2z by dy dx = 6 x cos(3y) partial d2z by dxdy = 6 x cos(3y)"
+    },
+    {
+        "id": 34,
+        "page": 5,
+        "coords": [
+            683,
+            2196,
+            1207,
+            2297
+        ],
+        "selected": false,
+        "text": "Note equality"
+    },
+    {
+        "id": 35,
+        "page": 6,
+        "coords": [
+            233,
+            133,
+            1480,
+            161
+        ],
+        "selected": false,
+        "text": "2 PARTIAL DERIVATIVES 6"
+    },
+    {
+        "id": 36,
+        "page": 6,
+        "coords": [
+            493,
+            231,
+            778,
+            331
+        ],
+        "selected": false,
+        "text": "partial d2f by dx dy and partial d2f by dy dx"
+    },
+    {
+        "id": 37,
+        "page": 6,
+        "coords": [
+            230,
+            341,
+            1591,
+            583
+        ],
+        "selected": false,
+        "text": "mild condition. In practice we always have equality. Note: partial d2f by dx dy is the rate of change in the x-direction of the slope in the y-direction."
+    },
+    {
+        "id": 38,
+        "page": 6,
+        "coords": [
+            234,
+            561,
+            1412,
+            658
+        ],
+        "selected": false,
+        "text": "It corresponds to local 'twist' or 'torsion' in the surface"
+    },
+    {
+        "id": 39,
+        "page": 6,
+        "coords": [
+            232,
+            262,
+            1349,
+            304
+        ],
+        "selected": false,
+        "text": "Theorem. If and are continuous, they are equal."
+    },
+    {
+        "id": 40,
+        "page": 6,
+        "coords": [
+            230,
+            658,
+            712,
+            784
+        ],
+        "selected": false,
+        "text": "in the surface. 2.2 The Chain Rule"
+    },
+    {
+        "id": 41,
+        "page": 6,
+        "coords": [
+            228,
+            1224,
+            1477,
+            1443
+        ],
+        "selected": false,
+        "text": "Consider z = f(x, y). To first order accuracy: z of x1 plus delta x y1 equals z of x1 y1 plus delta x times partial dz dx x1 y1 Consider also a perturbation in y:"
+    },
+    {
+        "id": 42,
+        "page": 6,
+        "coords": [
+            225,
+            1737,
+            1364,
+            1807
+        ],
+        "selected": false,
+        "text": "to first order accuracy in the second step we have"
+    },
+    {
+        "id": 43,
+        "page": 6,
+        "coords": [
+            464,
+            2144,
+            1593,
+            2275
+        ],
+        "selected": false,
+        "text": "equals deltax times partial dz dx of x1 y1 plus delta y times dz dy of x1 y1"
+    }
+]
